@@ -17,48 +17,21 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-image margin-top-0"
+      className="margin-top-0 jumbotron"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
+      <div className="jumbotron-container">
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
         >
           {title}
         </h1>
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
         >
           {subheading}
         </h3>
@@ -68,15 +41,16 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
+                  <h1>Hei asunnon myyjä!</h1>
+                  <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
+                  <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin:</p>
+                  <ul>
+                    <li>Laadukkaat kuvat</li>
+                    <li>Esittelyvideon</li>
+                    <li>Myyntiesitteen</li>
+                  </ul>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
@@ -106,7 +80,6 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
