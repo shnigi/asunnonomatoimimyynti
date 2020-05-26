@@ -7,31 +7,54 @@ $primary: $omatoimimyyntiMainColor
 $primary-invert: $omatoimimyyntiMainColor-invert
 $body-color: #333
 $black: #2b2523
-$marginM: 20px;
+$white: white
+
+// Margins
+$marginS: 10px
+$marginM: 20px
 
 /* Frontpage */
 .jumbotron
-  display: flex;
-  justify-content: center;
+  display: flex
+  justify-content: center
   height: 400px
   background-size: cover
-  background-position: center;
+  background-position: center
   display: flex
   justify-content: center
 
 .jumbotron-container
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 90%;
+  justify-content: center
+  flex-direction: column
+  max-width: 90%
   h1
-    margin-bottom: $marginM;
+    margin-bottom: $marginM
   h1, h3
-    box-shadow: #1cab04 0.5rem 0px 0px, #1cab04 -0.5rem 0px 0px;
-    background-color: #1cab04;
-    color: white;
-    padding: 0.25em;
-    line-height: 1;
+    box-shadow: #1cab04 0.5rem 0px 0px, #1cab04 -0.5rem 0px 0px
+    background-color: #1cab04
+    color: $white
+    padding: 0.25em
+    line-height: 1
+
+.three-column-wrapper
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: $marginS
+  .three-column-item
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $white
+    min-height: 200px
+    background-position: center;
+    background-size: cover;
+  .three-column-item:first-of-type
+    background-image: url('../img/kamera.jpeg');
+  .three-column-item:nth-of-type(2)
+    background-image: url('../img/kamera.jpeg');
+  .three-column-item:nth-of-type(3)
+    background-image: url('../img/kamera.jpeg');
 
 .navbar .navbar-menu
   box-shadow:none !important

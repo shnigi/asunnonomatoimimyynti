@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="section">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -46,6 +46,11 @@ export const IndexPageTemplate = ({
                   <h1>Hei asunnon myyjä!</h1>
                   <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
                   <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin:</p>
+                  <div className="three-column-wrapper">
+                    <div className="three-column-item">Laadukkaat kuvat</div>
+                    <div className="three-column-item">Esittelyvideon</div>
+                    <div className="three-column-item">Myyntiesitteen</div>
+                  </div>
                   <ul>
                     <li>Laadukkaat kuvat</li>
                     <li>Esittelyvideon</li>
