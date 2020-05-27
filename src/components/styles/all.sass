@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~bulma"
 
 $omatoimimyyntiMainColor: #1cab04;
 $omatoimimyyntiMainColor-invert: #fff
@@ -12,6 +13,7 @@ $white: white
 // Margins
 $marginS: 10px
 $marginM: 20px
+$marginL: 30px
 
 /* Frontpage */
 .jumbotron
@@ -28,33 +30,22 @@ $marginM: 20px
   justify-content: center
   flex-direction: column
   max-width: 90%
+  color: $white
   h1
     margin-bottom: $marginM
   h1, h3
+    color: $white
     box-shadow: #1cab04 0.5rem 0px 0px, #1cab04 -0.5rem 0px 0px
     background-color: #1cab04
-    color: $white
     padding: 0.25em
     line-height: 1
 
-.three-column-wrapper
-  display: grid
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: $marginS
-  .three-column-item
-    display: flex
-    justify-content: center
-    align-items: center
-    color: $white
-    min-height: 200px
-    background-position: center;
-    background-size: cover;
-  .three-column-item:first-of-type
-    background-image: url('../img/kamera.jpeg');
-  .three-column-item:nth-of-type(2)
-    background-image: url('../img/kamera.jpeg');
-  .three-column-item:nth-of-type(3)
-    background-image: url('../img/kamera.jpeg');
+.checklist-container
+  display: flex
+  align-items: center
+
+.action-buttonwrapper
+  margin-top: $marginL
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -81,7 +72,7 @@ $marginM: 20px
   position: relative
   left: 50%
   right: 50%
-  margin: 2em -50vw
+  margin: 0em -50vw
   background-size: cover
   background-position: bottom
   display: flex
@@ -159,10 +150,6 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
-
-@import "~bulma"
-
-
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
@@ -175,3 +162,7 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+
+.content ul
+  margin-left: 0px
+  margin-top: $marginL

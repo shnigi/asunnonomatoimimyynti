@@ -6,6 +6,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import kamera from "../img/kamera.jpeg"
 
 export const ProductPageTemplate = ({
   image,
@@ -18,7 +19,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
-  <div className="content">
+  <div>
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -27,80 +28,79 @@ export const ProductPageTemplate = ({
         })`,
       }}
     >
-      <h2
-        className="has-text-weight-bold is-size-1"
-        style={{
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
-          color: 'white',
-          padding: '1rem',
-        }}
-      >
-        {title}
-      </h2>
+        <div className="jumbotron-container">
+          <h1 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen">
+            {title}
+          </h1>
+        </div>
     </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+
+      <section id="two" className="wrapper style2 alt">
+        <div className="inner">
+          <div className="spotlight">
+            <div className="image">
+              <img src={kamera} alt="" />
+            </div>
+            <div className="content">
+              <h3>Valokuvat</h3>
+              <p>Otamme kohteesta laadukkaat kuvat sisältä ja ulkoa. Saat vähintään 12 kuvaa, joista tehdään sekä paino-
+              että nettiversiot. Isännöitsijältä tarvitsemme pohjapiirroksen, jonka käsittelemme tarvittaessa sellaiseen
+              muotoon, että se voidaan liittää esimerkiksi netissä kuvien joukkoon.
+              </p>
+              <ul className="actions action-buttonwrapper">
+                <li><a href="#" className="button alt">Referenssejä</a></li>
+              </ul>
             </div>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
-              />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
-              </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+          <div className="spotlight">
+            <div className="image">
+              <img src={kamera} alt="" />
+            </div>
+            <div className="content">
+              <h3>Video</h3>
+              <p>Kuvaamme asuntosi läpikotaisin ja teemme aineistosta 1-2 minuutin mittaisen koosteen. Videoon sisältyy
+                  myös ulkokuvaus.
+              </p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Referenssejä</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="spotlight">
+            <div className="image">
+              <img src={kamera} alt="" />
+            </div>
+            <div className="content">
+              <h3>Esite</h3>
+              <p>Teemme houkuttelevan myyntiesitteen, jossa on napakka esittelyteksti sekä perustiedot kohteesta.
+              Esitteessä on kuvia asunnosta, pohjapiirustus sekä muun muassa kohdenumero netissä olevaan
+              ilmoitukseen. Esite on kaksipuoleinen A4.</p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Referenssi</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="spotlight">
+            <div className="image">
+              <img src={kamera} alt="" />
+            </div>
+            <div className="content">
+              <h3>Ostotarjous</h3>
+              <strong>Muut kaupantekoon tarvittavat asiakirjat</strong>
+              <p>Internetistä löytyvät kaikki asunnon myyntiin tarvittavat asiakirjat. Suosittelemme käyttämään ensisijaisesti
+              Suomen suurinta välityspalvelua eli Etuovi.comia. Sieltä saat myös kaikki tarvitsemasi asiakirjat
+              kaupantekoon, kuten esisopimuslomakkeen, kauppakirjan ja valtakirjan. Vastaavia asiakirjoja ja asunnon
+              omatoimisen myynnin oppaita löydät runsaasti myös muilta sivustoilta.</p>
+              <ul className="actions">
+                <li><a href="#" className="button alt">Ostotarjouksessa huomioitavaa!</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+
+
   </div>
 )
 

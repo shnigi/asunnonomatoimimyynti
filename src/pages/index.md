@@ -1,9 +1,8 @@
 ---
 templateKey: index-page
-title: Asunnon omatoimisella myynnillä säästät tuhansia euroja!
+title: Asunnon omatoimimyynti RA
 image: /img/home-jumbotron.jpg
-subheading: Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja
-            avustuksella itse.
+subheading: Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja?
 heading: tittirii tattaraa
 mainpitch:
   title: Hei asunnon myyjä!

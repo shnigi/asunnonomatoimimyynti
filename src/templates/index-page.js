@@ -37,26 +37,82 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div>
+
+
+      <section id="one" class="wrapper">
+        <div className="inner split">
+          <section>
+            <h2>Asunnon omatoimisella myynnillä säästät tuhansia euroja!</h2>
+            <p>Hei asunnon myyjä!</p>
+            <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
+            <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin.</p>
+            <ul className="actions action-buttonwrapper">
+              <li><a href="#" className="button alt">Lue lisää</a></li>
+            </ul>
+          </section>
+          <section className="checklist-container">
+            <ul className="checklist">
+              <li>Laadukkaat kuvat</li>
+              <li>Esittelyvideon</li>
+              <li>Myyntiesitteen</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="two" className="wrapper style2 alt">
+        <div className="inner">
+          <div className="spotlight">
+            <div className="image">
+              <img src="images/pic01.jpg" alt="" />
+						</div>
+              <div className="content">
+                <h3>Ipsum pharetra tempus</h3>
+                <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+                <ul className="actions">
+                  <li><a href="#" className="button alt">Details</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="spotlight">
+              <div className="image">
+                <img src="images/pic02.jpg" alt="" />
+						</div>
+                <div className="content">
+                  <h3>Magna consequat felis</h3>
+                  <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+                  <ul className="actions">
+                    <li><a href="#" className="button alt">Details</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="spotlight">
+                <div className="image">
+                  <img src="images/pic03.jpg" alt="" />
+					      </div>
+                  <div className="content">
+                    <h3>Vitae placerat adipiscing</h3>
+                    <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
+                    <ul className="actions">
+                      <li><a href="#" className="button alt">Details</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <ul className="actions special">
+                  <li><a href="#" className="button alt">Ipsum magna tempus</a></li>
+                </ul>
+              </div>
+			</section>
+
+
+
+
     <section className="section">
       <div className="container">
         <div className="section">
           <div className="columns">
               <div className="content">
-                <div className="content">
-                  <h1>Hei asunnon myyjä!</h1>
-                  <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
-                  <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin:</p>
-                  <div className="three-column-wrapper">
-                    <div className="three-column-item">Laadukkaat kuvat</div>
-                    <div className="three-column-item">Esittelyvideon</div>
-                    <div className="three-column-item">Myyntiesitteen</div>
-                  </div>
-                  <ul>
-                    <li>Laadukkaat kuvat</li>
-                    <li>Esittelyvideon</li>
-                    <li>Myyntiesitteen</li>
-                  </ul>
-                </div>
+
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
