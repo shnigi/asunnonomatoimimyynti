@@ -99,8 +99,24 @@ export const ProductPageTemplate = ({
         </div>
       </section>
 
+      <section id="toimintatapa" class="section wrapper">
+        <h2>Toimintatapa</h2>
+        <div className="toimintatapa-stepper">
+          <p>Ota yhteys ja sovi tapaaminen. Kerro samalla etukäteen haluatko esimerkiksi myös ilmakuvia.</p>
+          <p>Tapaaminen kohteessa. Toimeksiannon allekirjoitus.</p>
+          <p>Haastattelu kohteen erityispiirteistä ym. seikoista, jotka eivät näy isännöitsijätodistuksessa.</p>
+          <p>Still-kuvaus.</p>
+          <p>Videokuvaus.</p>
+          <p>Materiaalin työstö julkaisukelpoiseksi.</p>
+          <p>Esitteen teko.</p>
+          <p>Materiaalin luovutus sähköisesti ja myyntiesitteet tilattaessa myös paperisena.</p>
+          <p>Tarvittaessa myynti-ilmoitusten laatiminen nettiportaaleihin.</p>
+        </div>
+      </section>
 
-
+      <ul class="actions special">
+        <li><a href="#" class="button alt">Hinnasto</a></li>
+      </ul>
   </div>
 )
 
