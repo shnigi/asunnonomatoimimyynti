@@ -46,8 +46,10 @@ export const IndexPageTemplate = ({
             <p>Hei asunnon myyjä!</p>
             <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
             <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin.</p>
+            <p>Nämä kaikki kuuluvat peruspakettiin. Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi
+                internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.</p>
             <ul className="actions action-buttonwrapper">
-              <li><a href="#" className="button alt">Lue lisää</a></li>
+              <li><a href="#asuntomyynti" className="button alt">Lue lisää</a></li>
             </ul>
           </section>
           <section className="checklist-container">
@@ -60,91 +62,48 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section id="two" className="wrapper style2 alt">
-        <div className="inner">
-          <div className="spotlight">
-            <div className="image">
-              <img src="images/pic01.jpg" alt="" />
-						</div>
-              <div className="content">
-                <h3>Ipsum pharetra tempus</h3>
-                <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
-                <ul className="actions">
-                  <li><a href="#" className="button alt">Details</a></li>
-                </ul>
-              </div>
-            </div>
-            <div className="spotlight">
-              <div className="image">
-                <img src="images/pic02.jpg" alt="" />
-						</div>
-                <div className="content">
-                  <h3>Magna consequat felis</h3>
-                  <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
-                  <ul className="actions">
-                    <li><a href="#" className="button alt">Details</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="spotlight">
-                <div className="image">
-                  <img src="images/pic03.jpg" alt="" />
-					      </div>
-                  <div className="content">
-                    <h3>Vitae placerat adipiscing</h3>
-                    <p>Lorem ipsum nisl sed cursus magna et amet veroeros. Sed phasellus malesuada quis orci. Pellentesque eget consequat.</p>
-                    <ul className="actions">
-                      <li><a href="#" className="button alt">Details</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <ul className="actions special">
-                  <li><a href="#" className="button alt">Ipsum magna tempus</a></li>
-                </ul>
-              </div>
-			</section>
-
-
-
-
-    <section className="section">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-              <div className="content">
-
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-          </div>
+      <section id="asuntomyynti" class="wrapper style2 alt">
+        <div className="container">
+        <h2>Mikä asuntomyynnissä on tärkeää?</h2>
+        <p>Asuntomyynnissä tärkeintä on löytää potentiaalinen ostaja. Niitä tarvitaan vain yksi. Kun sinulla on hyvin
+        tehdyt myynti-ilmoitukset ja esitteet, niin ostajat löytävät kohteesi. Hyvä ja hyvin markkinoitu kohde myy
+        melkein itse itsensä.</p>
+        <p>
+        Sinun tehtäväsi on määrittää hinta, pyytää isännöitsijältä Isännöitsijäntodistus, Energiatodistus, Tilinpäätös,
+        Korjaussuunnitelma sekä Pohjapiirustus. Ota sen jälkeen yhteys Asunnon omatoimimyyntiin ja sovi
+        kuvaus/esittelypäivä. Saat sen jälkeen viikon sisällä tarvitsemasi materiaalit sähköpostiisi.
+        </p>
+        <p>
+        Lisämaksusta postitamme sinulle myyntiesitteitä haluamasi määrän ja laadimme myynti-ilmoitukset
+        haluamiisi kanaviin.
+        </p>
+        <p>
+        Sen jälkeen sinun ei tarvitse muuta kuin odottaa potentiaalisten ostajien yhteydenottoa ja sopia näytöistä.
+        Tarjoukset voit ottaa vastaan esimerkiksi Asunnon omatoimimyynnistä saamallasi lomakkeella. Kauppakirja
+        ja kaupathan tehdään yleensä ostajan pankissa. Sitä ennen sinun tulee olla hyvissä ajoin yhteydessä omaan
+        pankkiisi, jossa asuntosi saattaa olla esimerkiksi lainan vakuutena.
+        </p>
+        <p>
+        Kiinteistövälittäjät väittävät olevansa ammattilaisia viestinnässä, kuvaamisessa, myymisessä ja lakiasioissa.
+        Heillä on omien sanojensa mukaan yleensä jo valmiina myös laaja ostajapotentiaali. Jos uskot heidän olevan
+        näin ylivertaisia, niin varaudu maksamaan jopa kymppitonnin palkkio. Jos sen sijaan arvelet tuntevasi itse
+        paremmin oman asuntosi hyvät puolet ja ominaisuudet ja luotat markkinointiviestinnän ammattilaisen
+        tuottamaan materiaaliin, niin myy itse! Älä siis heitä rahojasi kankkulan kaivoon, vaan ota yhteys Asunnon
+        omatoimimyyntiin!
+        </p>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="asuntomyynti" class="wrapper">
+        <div className="container">
+          <h2>Rohkeasti vaan toimeen!</h2>
+          <p>Jokainen meistä osaa myydä! Korosta hyviä puolia, mutta ole myös rehellinen! Kuuntele ennemmin
+          asiakasta ja vastaa kysyttäessä. Liian innokas myyminen on yleensä vain haitaksi. Kun sinulla on hyvää
+          myyntimateriaalia tukenasi, puheet voi jättää vähemmälle. Kysy ihmeessä myös välittäjältä paljonko hän
+          ottaa myyntipalkkiota ja mitä kaikkea sillä saat. Vertaa sen jälkeen hintoja ja laske erotus, jonka tulet
+          säästämään! Ota siis rohkeasti yhteyttä Asunnon omatoimimyyntiin!</p>
+        </div>
+      </section>
   </div>
 )
 

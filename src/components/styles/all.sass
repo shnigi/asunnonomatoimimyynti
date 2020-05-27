@@ -31,6 +31,7 @@ $marginL: 30px
   flex-direction: column
   max-width: 90%
   color: $white
+  text-align: center;
   h1
     margin-bottom: $marginM
   h1, h3
@@ -150,19 +151,6 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
-// responsiveness
-+tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
-
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
-
 .content ul
   margin-left: 0px
   margin-top: $marginL
@@ -171,7 +159,7 @@ $menu-label-color: $white-ter
   text-align: center;
 
 .toimintatapa-stepper
-  width: 300px
+  width: 500px
   margin: auto
   p
     border-top: 2px dashed
@@ -228,3 +216,21 @@ $menu-label-color: $white-ter
   p:last-child
     border-bottom-right-radius: 0
     border-bottom-left-radius: 0
+
+
+// responsiveness
++tablet-only
+  .blog-list-item .featured-thumbnail
+    flex-basis: 50%;
+  .toimintatapa-stepper
+    width: 400px
+
++mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center;
+    max-width: 70%;
+    margin: 0 0 1em;
+  .toimintatapa-stepper
+    width: 255px

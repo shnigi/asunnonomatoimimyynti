@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import kamera from "../img/kamera.jpeg"
+import Link from 'gatsby-link'
 
 export const ProductPageTemplate = ({
   image,
@@ -115,7 +116,7 @@ export const ProductPageTemplate = ({
       </section>
 
       <ul class="actions special">
-        <li><a href="#" class="button alt">Hinnasto</a></li>
+        <li><Link to="/hinnasto"><a href="#" class="button alt">Hinnasto</a></Link></li>
       </ul>
   </div>
 )
