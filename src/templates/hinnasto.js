@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -8,6 +8,7 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
+    <div>
     <section className="section">
       <div className="container">
         <h1>Hinnat peruspaketille</h1>
@@ -15,14 +16,14 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
         <div className="pricing-table">
           <div className="pricing-plan">
             <div className="plan-header">Yksiöt</div>
-            <div className="plan-price"><span className="plan-price-amount selling-table-text-override"><span className="plan-price-currency">€</span>496</span></div>
+            <div className="plan-price"><span className="plan-price-amount selling-table-text-override"><span className="plan-price-currency selling-table-text-override">€</span>496</span></div>
             <div className="plan-items">
               <div className="plan-item">Valokuvat</div>
               <div className="plan-item">Video</div>
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <a href="#asuntomyynti" className="button alt is-fullwidth">Tilaa</a>
+              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
             </div>
           </div>
 
@@ -35,7 +36,7 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <a href="#asuntomyynti" className="button alt is-fullwidth">Tilaa</a>
+              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
             </div>
           </div>
 
@@ -48,12 +49,27 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <a href="#asuntomyynti" className="button alt is-fullwidth">Tilaa</a>
+              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
             </div>
           </div>
         </div>
       </div>
+
     </section>
+    <section id="asuntomyynti" class="wrapper style2 alt">
+      <div className="container">
+        <h2>Lisäpalvelut</h2>
+        <p>Ilmakuvat 100 €.</p>
+        <p>Myyntiesiteet tulostettuna ja postitettuna. Mustavalkoiset 1,5 € kpl. Neliväriesitteet 3 € kpl. + postimaksu.</p>
+        <p>
+            Ilmoitusten syöttäminen nettiportaaliin. 62 €/portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
+            summa, joka esimerkiksi Oikotiellä on 149 € (Toukokuu 2020).
+        </p>
+        <h2>Muut kustannukset</h2>
+        <p>Kilometrikorvaus verohallinnon ohjeiden mukaisesti osoitteesta Pohjantähdentie 42 Helsinki.</p>
+      </div>
+    </section>
+    </div>
   )
 }
 

@@ -101,6 +101,7 @@ export const IndexPageTemplate = ({
           myyntimateriaalia tukenasi, puheet voi jättää vähemmälle. Kysy ihmeessä myös välittäjältä paljonko hän
           ottaa myyntipalkkiota ja mitä kaikkea sillä saat. Vertaa sen jälkeen hintoja ja laske erotus, jonka tulet
           säästämään! Ota siis rohkeasti yhteyttä Asunnon omatoimimyyntiin!</p>
+          <Link to="/otayhteytta" className="button alt">Ota yhteyttä</Link>
         </div>
       </section>
   </div>

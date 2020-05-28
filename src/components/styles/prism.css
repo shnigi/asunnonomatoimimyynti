@@ -6,7 +6,13 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 
-/* Reset */
+:root {
+	--spanishViolet: #4B296B;
+	--lightSpanishViolet: #4C2C72;
+	--xanadu: #77867F;
+	--asparagus: #87B37A;
+	--lightGreen: #9CE37D;
+}
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1783,7 +1789,7 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #1cab04;
+			box-shadow: inset 0 0 0 2px var(--asparagus);;
 			color: #666 !important;
 		}
 
@@ -2401,11 +2407,11 @@
 	}
 
 	ul.checklist li:before {
-		color: #1cab04;
+		color: var(--asparagus);
 	}
 
 	ul.contact li:before {
-		color: #1cab04;
+		color: var(--asparagus);
 	}
 
 /* Section/Article */
@@ -2711,20 +2717,20 @@
 			}
 
 			.wrapper.style1 blockquote {
-				border-left-color: #1cab04;
+				border-left-color: var(--asparagus);
 			}
 
 			.wrapper.style1 code {
-				background: #1cab04;
-				border-color: #1cab04;
+				background: var(--asparagus);
+				border-color: var(--asparagus);
 			}
 
 			.wrapper.style1 hr {
-				border-bottom-color: #1cab04;
+				border-bottom-color: var(--asparagus);
 			}
 
 			.wrapper.style1 .box {
-				border-color: #1cab04;
+				border-color: var(--asparagus);
 			}
 
 			.wrapper.style1 input[type="submit"],
@@ -2758,7 +2764,7 @@
 				.wrapper.style1 button.alt,
 				.wrapper.style1 .button.alt {
 					background-color: transparent;
-					box-shadow: inset 0 0 0 2px #1cab04;
+					box-shadow: inset 0 0 0 2px var(--asparagus);
 					color: #ffffff !important;
 				}
 
@@ -2767,7 +2773,7 @@
 					.wrapper.style1 input[type="button"].alt:hover,
 					.wrapper.style1 button.alt:hover,
 					.wrapper.style1 .button.alt:hover {
-						background-color: #1cab04;
+						background-color: var(--asparagus);
 					}
 
 					.wrapper.style1 input[type="submit"].alt:active,
@@ -2804,8 +2810,8 @@
 			.wrapper.style1 input[type="email"],
 			.wrapper.style1 select,
 			.wrapper.style1 textarea {
-				background: #1cab04;
-				border-color: #1cab04;
+				background: var(--asparagus);
+				border-color: var(--asparagus);
 			}
 
 				.wrapper.style1 input[type="text"]:focus,
@@ -2813,56 +2819,56 @@
 				.wrapper.style1 input[type="email"]:focus,
 				.wrapper.style1 select:focus,
 				.wrapper.style1 textarea:focus {
-					border-color: #1cab04;
-					box-shadow: 0 0 0 1px #1cab04;
+					border-color: var(--asparagus);
+					box-shadow: 0 0 0 1px var(--asparagus);
 				}
 
 			.wrapper.style1 .select-wrapper:before {
-				color: #1cab04;
+				color: var(--asparagus);
 			}
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #1cab04;
+				color: var(--asparagus);
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
 				.wrapper.style1 input[type="radio"] + label:before {
-					background: #1cab04;
-					border-color: #1cab04;
+					background: var(--asparagus);
+					border-color: var(--asparagus);
 				}
 
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
-				border-color: #1cab04;
-				color: #1cab04;
+				border-color: var(--asparagus);
+				color: var(--asparagus);
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
 			.wrapper.style1 input[type="radio"]:focus + label:before {
-				border-color: #1cab04;
-				box-shadow: 0 0 0 1px #1cab04;
+				border-color: var(--asparagus);
+				box-shadow: 0 0 0 1px var(--asparagus);
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #1cab04 !important;
+				color: var(--asparagus) !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #1cab04 !important;
+				color: var(--asparagus) !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #1cab04 !important;
+				color: var(--asparagus) !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #1cab04 !important;
+				color: var(--asparagus) !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #1cab04 !important;
+				color: var(--asparagus) !important;
 			}
 
 			.wrapper.style1 form.alt input[type="text"],
@@ -2874,27 +2880,27 @@
 			}
 
 			.wrapper.style1 ul.alt li {
-				border-top-color: #1cab04;
+				border-top-color: var(--asparagus);
 			}
 
 			.wrapper.style1 ul.checklist li:before {
-				color: #1cab04;
+				color: var(--asparagus);
 			}
 
 			.wrapper.style1 ul.contact li:before {
-				color: #1cab04;
+				color: var(--asparagus);
 			}
 
 			.wrapper.style1 header p {
-				color: #1cab04;
+				color: var(--asparagus);
 			}
 
 			.wrapper.style1 table tbody tr {
-				border-color: #1cab04;
+				border-color: var(--asparagus);
 			}
 
 				.wrapper.style1 table tbody tr:nth-child(2n + 1) {
-					background-color: #1cab04;
+					background-color: var(--asparagus);
 				}
 
 			.wrapper.style1 table th {
@@ -2902,28 +2908,28 @@
 			}
 
 			.wrapper.style1 table thead {
-				border-bottom-color: #1cab04;
+				border-bottom-color: var(--asparagus);
 			}
 
 			.wrapper.style1 table tfoot {
-				border-top-color: #1cab04;
+				border-top-color: var(--asparagus);
 			}
 
 			.wrapper.style1 table.alt tbody tr td {
-				border-color: #1cab04;
+				border-color: var(--asparagus);
 			}
 
 			.wrapper.style1 .split > :nth-child(even) {
-				border-left-color: #1cab04;
+				border-left-color: var(--asparagus);
 			}
 
 			.wrapper.style1 .spotlight {
-				background-color: #1cab04;
-				border-bottom-color: #1cab04;
+				background-color: var(--asparagus);
+				border-bottom-color: var(--asparagus);
 			}
 
 			.wrapper.style1.alt {
-				border-top-color: #1cab04;
+				border-top-color: var(--asparagus);
 			}
 
 		.wrapper.style2 {
@@ -2979,7 +2985,7 @@
 				.wrapper.style2 button.alt,
 				.wrapper.style2 .button.alt {
 					background-color: transparent;
-					box-shadow: inset 0 0 0 2px #1cab04;
+					box-shadow: inset 0 0 0 2px var(--asparagus);
 					color: #666 !important;
 				}
 
