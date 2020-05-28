@@ -1,8 +1,36 @@
+$pricing-plan-active-transform: scale(1)
+
+$spanishViolet: #4B296B
+$lightSpanishViolet: #4C2C72
+$xanadu: #77867F
+$asparagus: #87B37A
+$lightGreen: #9CE37D
+
+.text-violet
+  color: $spanishViolet
+
+.text-lightviolet
+  color: $lightSpanishViolet
+
+.text-xanadu
+  color: $xanadu
+
+.text-asparagus
+  color: $asparagus
+
+.text-lightGreen
+  color: $lightGreen
+
+.selling-table-text-override
+  color: $asparagus !important
+
 @import "~bulma/sass/utilities/initial-variables"
 @import "~bulma"
+@import '~bulma-pricingtable';
 
-$omatoimimyyntiMainColor: #1cab04;
+$omatoimimyyntiMainColor: $asparagus;
 $omatoimimyyntiMainColor-invert: #fff
+
 
 $primary: $omatoimimyyntiMainColor
 $primary-invert: $omatoimimyyntiMainColor-invert
@@ -14,6 +42,7 @@ $white: white
 $marginS: 10px
 $marginM: 20px
 $marginL: 30px
+
 
 /* Frontpage */
 .jumbotron
@@ -36,10 +65,8 @@ $marginL: 30px
     margin-bottom: $marginM
   h1, h3
     color: $white
-    box-shadow: #1cab04 0.5rem 0px 0px, #1cab04 -0.5rem 0px 0px
-    background-color: #1cab04
-    padding: 0.25em
-    line-height: 1
+    background-color: $omatoimimyyntiMainColor
+    padding: 0.25em 20px
 
 .checklist-container
   display: flex
@@ -90,10 +117,9 @@ $marginL: 30px
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #1cab04
+    color: $omatoimimyyntiMainColor
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #158c01;
-    box-shadow: inset 0 0 0 2px #158c01;
+    box-shadow: inset 0 0 0 2px $omatoimimyyntiMainColor;
     -webkit-transition: all .15s ease
     transition: all .15s ease
 

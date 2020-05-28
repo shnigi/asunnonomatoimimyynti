@@ -2,14 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import kamera from "../img/kamera.jpeg"
 import Link from 'gatsby-link'
 
-export const ProductPageTemplate = ({
+export const PalvelukuvausTemplate = ({
   image,
   title,
   heading,
@@ -121,7 +117,7 @@ export const ProductPageTemplate = ({
   </div>
 )
 
-ProductPageTemplate.propTypes = {
+PalvelukuvausTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -150,7 +146,7 @@ const ProductPage = ({ data }) => {
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <PalvelukuvausTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
