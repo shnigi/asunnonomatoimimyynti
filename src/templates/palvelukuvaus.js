@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import kamera from "../img/kamera.jpeg"
+import video from "../img/video.jpeg"
+import esite from "../img/esite.jpeg"
+import asunto from "../img/asunto.jpeg"
 import Link from 'gatsby-link'
 
 export const PalvelukuvausTemplate = ({
@@ -45,13 +48,13 @@ export const PalvelukuvausTemplate = ({
               muotoon, että se voidaan liittää esimerkiksi netissä kuvien joukkoon.
               </p>
               <ul className="actions action-buttonwrapper">
-                <li><a href="#" className="button alt">Referenssejä</a></li>
+                <li><a href="#" className="button">Referenssejä</a></li>
               </ul>
             </div>
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={kamera} alt="" />
+              <img src={video} alt="" />
             </div>
             <div className="content">
               <h3>Video</h3>
@@ -59,13 +62,13 @@ export const PalvelukuvausTemplate = ({
                   myös ulkokuvaus.
               </p>
               <ul className="actions">
-                <li><a href="#" className="button alt">Referenssejä</a></li>
+                <li><a href="#" className="button">Referenssejä</a></li>
               </ul>
             </div>
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={kamera} alt="" />
+              <img src={esite} alt="" />
             </div>
             <div className="content">
               <h3>Esite</h3>
@@ -73,13 +76,13 @@ export const PalvelukuvausTemplate = ({
               Esitteessä on kuvia asunnosta, pohjapiirustus sekä muun muassa kohdenumero netissä olevaan
               ilmoitukseen. Esite on kaksipuoleinen A4.</p>
               <ul className="actions">
-                <li><a href="#" className="button alt">Referenssi</a></li>
+                <li><a href="#" className="button">Referenssi</a></li>
               </ul>
             </div>
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={kamera} alt="" />
+              <img src={asunto} alt="" />
             </div>
             <div className="content">
               <h3>Ostotarjous</h3>
@@ -89,7 +92,7 @@ export const PalvelukuvausTemplate = ({
               kaupantekoon, kuten esisopimuslomakkeen, kauppakirjan ja valtakirjan. Vastaavia asiakirjoja ja asunnon
               omatoimisen myynnin oppaita löydät runsaasti myös muilta sivustoilta.</p>
               <ul className="actions">
-                <li><a href="#" className="button alt">Ostotarjouksessa huomioitavaa!</a></li>
+                <li><a href="#" className="button">Ostotarjouksessa huomioitavaa!</a></li>
               </ul>
             </div>
           </div>
@@ -112,7 +115,7 @@ export const PalvelukuvausTemplate = ({
       </section>
 
       <ul class="actions special">
-        <li><Link to="/hinnasto"><a href="#" class="button alt">Hinnasto</a></Link></li>
+        <li><Link to="/hinnasto"><a href="#" class="button">Hinnasto</a></Link></li>
       </ul>
   </div>
 )

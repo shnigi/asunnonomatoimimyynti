@@ -40,6 +40,17 @@ export default class Index extends React.Component {
           {/* <div className="container">
             <div className="content"> */}
             <div class="inner split">
+            <section>
+              <h2>Yhteystiedot</h2>
+              <p><strong>Asunnon omatoimimyynti</strong></p>
+              <p>Ralf Ahlskog</p>
+              <p>Pohjantähdentie 42 B</p>
+              <p>00740 Helsinki</p>
+              <p>ralf.ahlskog@rac.fi</p>
+              <p>Puh. 0400870484</p>
+              <p>Y-tunnus 2262313-7</p>
+              <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
+            </section>
               <section>
               <h2>Ota yhteyttä</h2>
               <form
@@ -186,21 +197,10 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <ul className="actions action-buttonwrapper">
-                    <li><button className="button alt" type="submit">Lähetä</button></li>
+                    <li><button className="button" type="submit">Lähetä</button></li>
                   </ul>
                 </div>
               </form>
-            </section>
-            <section>
-            <h2>Yhteystiedot</h2>
-            <strong>Asunon omatoimimyynti</strong>
-              <p>Ralf Ahlskog</p>
-              <p>Pohjantähdentie 42 B</p>
-              <p>00740 Helsinki</p>
-              <p>ralf.ahlskog@rac.fi</p>
-              <p>Puh. 0400870484</p>
-              <p>Y-tunnus 2262313-7</p>
-              <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
             </section>
           </div>
         </section>

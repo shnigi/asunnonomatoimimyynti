@@ -9,21 +9,6 @@ $xanadu: #77867F
 $asparagus: #87B37A
 $lightGreen: #9CE37D
 
-.text-violet
-  color: $spanishViolet
-
-.text-lightviolet
-  color: $lightSpanishViolet
-
-.text-xanadu
-  color: $xanadu
-
-.text-asparagus
-  color: $asparagus
-
-.text-lightGreen
-  color: $lightGreen
-
 .selling-table-text-override
   color: $asparagus !important
 
@@ -31,12 +16,8 @@ $lightGreen: #9CE37D
 @import "~bulma"
 @import '~bulma-pricingtable';
 
-$omatoimimyyntiMainColor: $asparagus;
-$omatoimimyyntiMainColor-invert: #fff
-
-
-$primary: $omatoimimyyntiMainColor
-$primary-invert: $omatoimimyyntiMainColor-invert
+$primary: $asparagus;
+$primary-invert: white
 $body-color: #333
 $black: #2b2523
 $white: white
@@ -73,7 +54,7 @@ $marginL: 30px
     margin-bottom: $marginM
   h1, h3
     color: $white
-    background-color: $omatoimimyyntiMainColor
+    background-color: $asparagus
     padding: 0.25em 20px
 
 .checklist-container
@@ -82,6 +63,10 @@ $marginL: 30px
 
 .action-buttonwrapper
   margin-top: $marginL
+
+.navbar
+  position: sticky;
+  top: 0;
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -110,26 +95,10 @@ $marginL: 30px
   right: 50%
   margin: 0em -50vw
   background-size: cover
-  background-position: bottom
+  background-position: center
   display: flex
   justify-content: center
   align-items: center
-
-.btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: $omatoimimyyntiMainColor
-    text-align: center
-    box-shadow: inset 0 0 0 2px $omatoimimyyntiMainColor;
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
@@ -151,11 +120,10 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $omatoimimyyntiMainColor-invert
-$menu-item-active-background-color:	$omatoimimyyntiMainColor-invert
-$menu-list-border-left: 1px solid $omatoimimyyntiMainColor-invert
+$menu-item-active-color: $white
+$menu-item-active-background-color:	$white
+$menu-list-border-left: 1px solid $white
 $menu-label-color: $white-ter
-
 
 .menu-label
   font-size: 1em !important
@@ -163,24 +131,24 @@ $menu-label-color: $white-ter
 .menu-list
   list-style: none !important
   text-align: left
-.social
-  padding: 2em
-.social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
 
 // blog roll
+.is-featured
+  color: white;
+
+.is-featured .button
+  background-color: $spanishViolet
+  color: white;
+
+.is-featured .button:hover
+  background-color: $lightSpanishViolet
+
 .blog-list-item.is-featured
-  background-color: #ccdec9;
+  background-color: $asparagus;
+  .post-meta
+    color: white;
 .blog-list-item header
   display: flex;
-  margin-bottom: 1em;
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
@@ -197,7 +165,7 @@ $menu-label-color: $white-ter
   margin: auto
   p
     border-top: 2px dashed
-    border-color: $omatoimimyyntiMainColor !important
+    border-color: $asparagus !important
     margin: 0
     padding: 30px
     counter-increment: section
@@ -213,7 +181,7 @@ $menu-label-color: $white-ter
     padding: 10px
     height: 40px
     width: 40px
-    background-color: $omatoimimyyntiMainColor;
+    background-color: $asparagus;
     color: white
     font-size: 110%
   p:nth-child(odd):before
@@ -227,7 +195,7 @@ $menu-label-color: $white-ter
     padding: 10px
     height: 40px
     width: 40px
-    background-color: $omatoimimyyntiMainColor
+    background-color: $asparagus
     text-align: center
     color: white
     font-size: 110%

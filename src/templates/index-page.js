@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
             <p>Nämä kaikki kuuluvat peruspakettiin. Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi
                 internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.</p>
             <ul className="actions action-buttonwrapper">
-              <li><a href="#asuntomyynti" className="button alt">Lue lisää</a></li>
+              <li><a href="#asuntomyynti" className="button">Lue lisää</a></li>
             </ul>
           </section>
           <section className="checklist-container">
@@ -102,7 +102,7 @@ export const IndexPageTemplate = ({
           ottaa myyntipalkkiota ja mitä kaikkea sillä saat. Vertaa sen jälkeen hintoja ja laske erotus, jonka tulet
           säästämään! Ota siis rohkeasti yhteyttä Asunnon omatoimimyyntiin!</p>
           <ul className="actions action-buttonwrapper">
-            <li><Link to="/otayhteytta" className="button alt">Ota yhteyttä</Link></li>
+            <li><Link to="/otayhteytta" className="button">Ota yhteyttä</Link></li>
           </ul>
         </div>
       </section>

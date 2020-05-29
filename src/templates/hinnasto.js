@@ -23,7 +23,7 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
+              <Link to="/otayhteytta" className="button is-fullwidth">Tilaa</Link>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
+              <Link to="/otayhteytta" className="button is-fullwidth">Tilaa</Link>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
               <div className="plan-item">Esite</div>
             </div>
             <div className="plan-footer">
-              <Link to="/otayhteytta" className="button alt is-fullwidth">Tilaa</Link>
+              <Link to="/otayhteytta" className="button is-fullwidth">Tilaa</Link>
             </div>
           </div>
         </div>
