@@ -59,12 +59,12 @@ export const HinnastoPageTemplate = ({ title, content, contentComponent }) => {
     <section id="asuntomyynti" class="wrapper style2 alt">
       <div className="container">
         <h2>Lisäpalvelut</h2>
-        <p>Ilmakuvat 100 €.</p>
-        <p>Myyntiesiteet tulostettuna ja postitettuna. Mustavalkoiset 1,5 € kpl. Neliväriesitteet 3 € kpl. + postimaksu.</p>
-        <p>
-            Ilmoitusten syöttäminen nettiportaaliin. 62 €/portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
-            summa, joka esimerkiksi Oikotiellä on 149 € (Toukokuu 2020).
-        </p>
+          <ul class="checklist">
+            <li>Ilmakuvat 100 €</li>
+            <li>Myyntiesitteet tulostettuna ja postitettuna. Mustavalkoiset 1,5 € kpl. Neliväriesitteet 3 € kpl. + postimaksu.</li>
+            <li>Ilmoitusten syöttäminen nettiportaaliin. 62 €/portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
+            summa, joka esimerkiksi Oikotiellä on 149 € (Toukokuu 2020).</li>
+          </ul>
         <h2>Muut kustannukset</h2>
         <p>Kilometrikorvaus verohallinnon ohjeiden mukaisesti osoitteesta Pohjantähdentie 42 Helsinki.</p>
       </div>

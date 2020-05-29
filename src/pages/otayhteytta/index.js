@@ -36,10 +36,12 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section style2 alt">
-          <div className="container">
-            <div className="content">
-              <h1>Ota yhteyttä</h1>
+        <section className="wrapper">
+          {/* <div className="container">
+            <div className="content"> */}
+            <div class="inner split">
+              <section>
+              <h2>Ota yhteyttä</h2>
               <form
                 name="contact"
                 method="post"
@@ -188,7 +190,18 @@ export default class Index extends React.Component {
                   </ul>
                 </div>
               </form>
-            </div>
+            </section>
+            <section>
+            <h2>Yhteystiedot</h2>
+            <strong>Asunon omatoimimyynti</strong>
+              <p>Ralf Ahlskog</p>
+              <p>Pohjantähdentie 42 B</p>
+              <p>00740 Helsinki</p>
+              <p>ralf.ahlskog@rac.fi</p>
+              <p>Puh. 0400870484</p>
+              <p>Y-tunnus 2262313-7</p>
+              <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
+            </section>
           </div>
         </section>
       </Layout>
