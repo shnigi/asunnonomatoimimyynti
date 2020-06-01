@@ -34,7 +34,7 @@ export const IndexPageTemplate = ({
     </div>
 
 
-      <section id="one" class="wrapper">
+      <section id="one" className="wrapper">
         <div className="inner split">
           <section>
             <h2>Asunnon omatoimisella myynnillä säästät tuhansia euroja!</h2>
@@ -58,7 +58,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section id="asuntomyynti" class="wrapper style2 alt">
+      <section id="asuntomyynti" className="wrapper style2 alt">
         <div className="container">
         <h2>Mikä asuntomyynnissä on tärkeää?</h2>
         <p>Asuntomyynnissä tärkeintä on löytää potentiaalinen ostaja. Niitä tarvitaan vain yksi. Kun sinulla on hyvin
@@ -90,7 +90,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section id="asuntomyynti" class="wrapper">
+      <section id="asuntomyynti" className="wrapper">
         <div className="container">
           <h2>Rohkeasti vaan toimeen!</h2>
           <p>Jokainen meistä osaa myydä! Korosta hyviä puolia, mutta ole myös rehellinen! Kuuntele ennemmin

@@ -31,10 +31,14 @@ const Navbar = class extends React.Component {
     )
   }
 
+  setActiveLink = () => {
+    console.log('wat');
+  }
+
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -62,19 +66,19 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/">
+              <Link className="navbar-item" to="/" activeClassName="activeLink">
                 Etusivu
               </Link>
-              <Link className="navbar-item" to="/palvelukuvaus">
+              <Link className="navbar-item" to="/palvelukuvaus" activeClassName="activeLink">
                 Palvelukuvaus
               </Link>
-              <Link className="navbar-item" to="/hinnasto">
+              <Link className="navbar-item" to="/hinnasto" activeClassName="activeLink">
                 Hinnasto
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/blog" activeClassName="activeLink">
                 Blogi
               </Link>
-              <Link className="navbar-item" to="/otayhteytta">
+              <Link className="navbar-item" to="/otayhteytta" activeClassName="activeLink">
                 Ota yhteyttä
               </Link>
             </div>

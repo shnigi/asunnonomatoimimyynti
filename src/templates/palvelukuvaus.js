@@ -109,7 +109,7 @@ export const PalvelukuvausTemplate = ({
           <p>Tarvittaessa myynti-ilmoitusten laatiminen nettiportaaleihin.</p>
         </div>
 
-          <ul className="actions special">
+          <ul className="actions align-center">
           <li><Link to="/hinnasto" className="button">Hinnasto</Link></li>
         </ul>
       </div>
