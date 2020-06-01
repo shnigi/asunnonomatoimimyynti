@@ -11,15 +11,10 @@ import Link from 'gatsby-link'
 export const PalvelukuvausTemplate = ({
   image,
   title,
-  heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
+  helmet
 }) => (
   <div>
+      {helmet || ''}
     <div
       className="full-width-image-container margin-top-0"
       style={{
@@ -48,7 +43,7 @@ export const PalvelukuvausTemplate = ({
               muotoon, että se voidaan liittää esimerkiksi netissä kuvien joukkoon.
               </p>
               <ul className="actions action-buttonwrapper">
-                <li><a href="#" className="button">Referenssejä</a></li>
+                <li><a href="/" className="button">Referenssejä</a></li>
               </ul>
             </div>
           </div>
@@ -62,7 +57,7 @@ export const PalvelukuvausTemplate = ({
                   myös ulkokuvaus.
               </p>
               <ul className="actions">
-                <li><a href="#" className="button">Referenssejä</a></li>
+                <li><a href="/" className="button">Referenssejä</a></li>
               </ul>
             </div>
           </div>
@@ -76,7 +71,7 @@ export const PalvelukuvausTemplate = ({
               Esitteessä on kuvia asunnosta, pohjapiirustus sekä muun muassa kohdenumero netissä olevaan
               ilmoitukseen. Esite on kaksipuoleinen A4.</p>
               <ul className="actions">
-                <li><a href="#" className="button">Referenssi</a></li>
+                <li><a href="/" className="button">Referenssi</a></li>
               </ul>
             </div>
           </div>
@@ -92,14 +87,15 @@ export const PalvelukuvausTemplate = ({
               kaupantekoon, kuten esisopimuslomakkeen, kauppakirjan ja valtakirjan. Vastaavia asiakirjoja ja asunnon
               omatoimisen myynnin oppaita löydät runsaasti myös muilta sivustoilta.</p>
               <ul className="actions">
-                <li><a href="#" className="button">Ostotarjouksessa huomioitavaa!</a></li>
+                <li><a href="/" className="button">Asiakirjat</a></li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="toimintatapa" class="section wrapper">
+      <section id="toimintatapa" className="section wrapper">
+        <div className="content">
         <h2>Toimintatapa</h2>
         <div className="toimintatapa-stepper">
           <p>Ota yhteys ja sovi tapaaminen. Kerro samalla etukäteen haluatko esimerkiksi myös ilmakuvia.</p>
@@ -112,11 +108,12 @@ export const PalvelukuvausTemplate = ({
           <p>Materiaalin luovutus sähköisesti ja myyntiesitteet tilattaessa myös paperisena.</p>
           <p>Tarvittaessa myynti-ilmoitusten laatiminen nettiportaaleihin.</p>
         </div>
-      </section>
 
-      <ul class="actions special">
-        <li><Link to="/hinnasto"><a href="#" class="button">Hinnasto</a></Link></li>
-      </ul>
+          <ul className="actions special">
+          <li><Link to="/hinnasto" className="button">Hinnasto</Link></li>
+        </ul>
+      </div>
+      </section>
   </div>
 )
 

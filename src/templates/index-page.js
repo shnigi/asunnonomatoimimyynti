@@ -3,16 +3,12 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+// import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
   subheading,
-  mainpitch,
-  description,
-  intro,
 }) => (
   <div>
     <div
@@ -45,13 +41,14 @@ export const IndexPageTemplate = ({
             <p>Hei asunnon myyjä!</p>
             <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
             <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin.</p>
-            <p>Nämä kaikki kuuluvat peruspakettiin. Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi
+            <p>Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi
                 internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.</p>
             <ul className="actions action-buttonwrapper">
               <li><a href="#asuntomyynti" className="button">Lue lisää</a></li>
             </ul>
           </section>
           <section className="checklist-container">
+            <h3>Palvelun sisältö</h3>
             <ul className="checklist">
               <li>Laadukkaat kuvat</li>
               <li>Esittelyvideon</li>

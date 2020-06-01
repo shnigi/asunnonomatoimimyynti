@@ -59,7 +59,9 @@ $marginL: 30px
 
 .checklist-container
   display: flex
-  align-items: center
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 .action-buttonwrapper
   margin-top: $marginL
@@ -157,12 +159,17 @@ $menu-label-color: $white-ter
   margin-left: 0px
   margin-top: $marginL
 
+// Weird fix
+.content p:not(:last-child), .content ul:not(:last-child)
+    margin-bottom: 0px;
+
 #toimintatapa h2
   text-align: center;
 
 .toimintatapa-stepper
   width: 500px
   margin: auto
+  margin-bottom: $marginL;
   p
     border-top: 2px dashed
     border-color: $asparagus !important
@@ -234,4 +241,4 @@ $menu-label-color: $white-ter
     max-width: 70%;
     margin: 0 0 1em;
   .toimintatapa-stepper
-    width: 255px
+    width: 235px

@@ -5,7 +5,10 @@ const Footer = class extends React.Component {
     return (
       <footer id="footer">
         <div className="copyright">
-          © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään. Kuvat: <a href="http://unsplash.com" target="_blank" rel="noopener">Unsplash</a>. Design: <a href="http://templated.co" target="_blank" rel="noopener">TEMPLATED / Niki Ahlskog</a>. Toteutus: <a href="https://nikiahlskog.com" target="_blank" rel="noopener">Niki Ahlskog</a>.
+          © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään.
+          Kuvat: <a href="http://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a>.
+          Design: <a href="http://templated.co" target="_blank" rel="noreferrer">TEMPLATED / Niki Ahlskog</a>.
+          Toteutus: <a href="https://nikiahlskog.com" target="_blank" rel="noreferrer">Niki Ahlskog</a>.
 				</div>
       </footer>
     )
