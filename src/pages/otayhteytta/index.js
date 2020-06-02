@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         <section className="wrapper">
           {/* <div className="container">
             <div className="content"> */}
-            <div class="inner split">
+            <div className="inner split">
             <section>
               <h2>Yhteystiedot</h2>
               <p><strong>Asunnon omatoimimyynti</strong></p>

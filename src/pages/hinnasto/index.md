@@ -1,5 +1,6 @@
 ---
 templateKey: 'hinnasto'
-path: /about
-title: About our values
+path: /hinnasto
+title: Asunnon omatoimimyynti RA - Hinnasto
+description: test description
 ---

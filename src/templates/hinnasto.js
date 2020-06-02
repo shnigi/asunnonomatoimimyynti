@@ -1,12 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import { HTMLContent } from '../components/Content'
+import { Helmet } from 'react-helmet'
 
-export const HinnastoPageTemplate = () => {
+export const HinnastoPageTemplate = ({helmet}) => {
   return (
     <div>
+      {helmet || ''}
     <section className="section">
       <div className="container">
         <h1>Hinnat peruspaketille</h1>
@@ -54,10 +54,10 @@ export const HinnastoPageTemplate = () => {
       </div>
 
     </section>
-    <section id="asuntomyynti" class="wrapper style2 alt">
+    <section id="asuntomyynti" className="wrapper style2 alt">
       <div className="container">
         <h2>Lisäpalvelut</h2>
-          <ul class="checklist">
+          <ul className="checklist">
             <li>Ilmakuvat 100 €</li>
             <li>Myyntiesitteet tulostettuna ja postitettuna. Mustavalkoiset 1,5 € kpl. Neliväriesitteet 3 € kpl. + postimaksu.</li>
             <li>Ilmoitusten syöttäminen nettiportaaliin. 62 €/portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
@@ -71,28 +71,24 @@ export const HinnastoPageTemplate = () => {
   )
 }
 
-HinnastoPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-}
-
 const HinnastoPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <HinnastoPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
+        helmet={
+          <Helmet>
+            <title>{`${frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${frontmatter.description}`}
+            />
+          </Helmet>
+        }
       />
     </Layout>
   )
-}
-
-HinnastoPage.propTypes = {
-  data: PropTypes.object.isRequired,
 }
 
 export default HinnastoPage
@@ -100,9 +96,9 @@ export default HinnastoPage
 export const HinnastoPageQuery = graphql`
   query HinnastoPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
       frontmatter {
         title
+        description
       }
     }
   }
