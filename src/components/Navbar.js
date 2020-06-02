@@ -30,11 +30,6 @@ const Navbar = class extends React.Component {
       }
     )
   }
-
-  setActiveLink = () => {
-    console.log('wat');
-  }
-
   render() {
     return (
       <nav
@@ -75,7 +70,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/hinnasto" activeClassName="activeLink">
                 Hinnasto
               </Link>
-              <Link className="navbar-item" to="/blog" activeClassName="activeLink">
+              <Link className="navbar-item" to="/blogi" activeClassName="activeLink">
                 Blogi
               </Link>
               <Link className="navbar-item" to="/otayhteytta" activeClassName="activeLink">
