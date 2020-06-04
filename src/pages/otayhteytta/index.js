@@ -51,7 +51,7 @@ export default class Index extends React.Component {
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
             </section>
-              <section>
+            <section id="yhteyslomake">
               <h2>Ota yhteyttä</h2>
               <form
                 name="contact"

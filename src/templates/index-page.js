@@ -99,7 +99,7 @@ export const IndexPageTemplate = ({
           ottaa myyntipalkkiota ja mitä kaikkea sillä saat. Vertaa sen jälkeen hintoja ja laske erotus, jonka tulet
           säästämään! Ota siis rohkeasti yhteyttä Asunnon omatoimimyyntiin!</p>
           <ul className="actions action-buttonwrapper">
-            <li><Link to="/otayhteytta" className="button">Ota yhteyttä</Link></li>
+            <li><Link to="/otayhteytta#yhteyslomake" className="button">Ota yhteyttä</Link></li>
           </ul>
         </div>
       </section>
