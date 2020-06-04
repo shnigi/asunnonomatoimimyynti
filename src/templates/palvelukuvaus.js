@@ -44,7 +44,10 @@ export const PalvelukuvausTemplate = ({
               muotoon, että se voidaan liittää esimerkiksi netissä kuvien joukkoon.
               </p>
               <ul className="actions action-buttonwrapper">
-                <li><a href="/" className="button">Referenssejä</a></li>
+                <li>
+                  <Link to="/referenssit" className="button">Referenssejä</Link>
+                  {/* <a href="/" className="button">Referenssejä</a> */}
+                  </li>
               </ul>
             </div>
           </div>
