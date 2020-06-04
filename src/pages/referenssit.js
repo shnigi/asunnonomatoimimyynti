@@ -150,7 +150,7 @@ export const ReferenssittPageTemplate = ({helmet}) => {
   )
 }
 
-const HinnastoPage = () => {
+const ReferenssitPage = () => {
   return (
     <Layout>
       <ReferenssittPageTemplate
@@ -168,7 +168,7 @@ const HinnastoPage = () => {
   )
 }
 
-export default HinnastoPage
+export default ReferenssitPage
 
 // export const HinnastoPageQuery = graphql`
 //   query HinnastoPage($id: String!) {

@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
 
 function encode(data) {
@@ -197,6 +198,8 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <ul className="actions action-buttonwrapper">
+                    <li><p>Lähettämällä lomakkeen hyväksyt <Link to="/rekisteriseloste">tietosuojalausekkeen</Link></p>
+                    </li>
                     <li><button className="button" type="submit">Lähetä</button></li>
                   </ul>
                 </div>
