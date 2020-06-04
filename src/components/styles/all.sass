@@ -231,14 +231,29 @@ $menu-label-color: $white-ter
     border-bottom-right-radius: 0
     border-bottom-left-radius: 0
 
+.video-container
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+.youtube-video
+  width: 49%
+  min-width: 350px
+  height: 300px
+  margin-bottom: $marginM
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
   .toimintatapa-stepper
     width: 400px
 
 +mobile
+  .youtube-video
+    width: 100%
+    min-width: 280px
+
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail

@@ -5,6 +5,7 @@ module.exports = {
       'Miksi et myisi asuntoasi itse? Asunnon omatoimimyynti RA auttaa myymään asuntosi.',
   },
   plugins: [
+    'gatsby-plugin-anchor-links',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

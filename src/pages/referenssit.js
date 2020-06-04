@@ -135,9 +135,9 @@ export const ReferenssittPageTemplate = ({helmet}) => {
   return (
     <div>
       {helmet || ''}
-    <section className="section">
+    <section className="section" id="valokuvareferenssit">
       <div className="container">
-        <h1>Referenssit</h1>
+        <h1>Valokuvat</h1>
           <Gallery photos={photos} />
       </div>
     </section>
@@ -146,6 +146,15 @@ export const ReferenssittPageTemplate = ({helmet}) => {
           <Gallery photos={photos2} />
       </div>
     </section>
+      <section className="section" id="videoreferenssit">
+        <div className="container">
+          <h1>Videot</h1>
+          <div className="video-container">
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

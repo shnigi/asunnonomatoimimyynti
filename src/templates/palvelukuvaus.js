@@ -8,6 +8,7 @@ import video from "../img/video.jpeg"
 import esite from "../img/esite.jpeg"
 import asunto from "../img/asunto.jpeg"
 import Link from 'gatsby-link'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export const PalvelukuvausTemplate = ({
   image,
@@ -46,8 +47,7 @@ export const PalvelukuvausTemplate = ({
               <ul className="actions action-buttonwrapper">
                 <li>
                   <Link to="/referenssit" className="button">Referenssejä</Link>
-                  {/* <a href="/" className="button">Referenssejä</a> */}
-                  </li>
+                </li>
               </ul>
             </div>
           </div>
@@ -61,7 +61,9 @@ export const PalvelukuvausTemplate = ({
                   myös ulkokuvaus.
               </p>
               <ul className="actions">
-                <li><a href="/" className="button">Referenssejä</a></li>
+                <li>
+                  <AnchorLink to="/referenssit/#videoreferenssit" title="Referenssejä" className="button">Referenssejä</AnchorLink>
+                </li>
               </ul>
             </div>
           </div>
@@ -128,7 +130,7 @@ PalvelukuvausTemplate.propTypes = {
   description: PropTypes.string,
 }
 
-const ProductPage = ({ data }) => {
+const Palvelukuvaus = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
@@ -152,7 +154,7 @@ const ProductPage = ({ data }) => {
   )
 }
 
-ProductPage.propTypes = {
+Palvelukuvaus.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -160,10 +162,10 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default Palvelukuvaus
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const PalvelukuvausQuery = graphql`
+  query Palvelukuvaus($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
