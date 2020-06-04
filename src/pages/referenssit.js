@@ -3,66 +3,89 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { Helmet } from 'react-helmet'
 import Gallery from 'react-photo-gallery'
-
+import asunto1 from "../img/referenssit/asunto1/asunto1.jpg"
+import asunto2 from "../img/referenssit/asunto1/asunto2.jpg"
+import asunto3 from "../img/referenssit/asunto1/asunto3.jpg"
+import asunto4 from "../img/referenssit/asunto1/asunto4.jpg"
+import asunto5 from "../img/referenssit/asunto1/asunto5.jpg"
+import asunto6 from "../img/referenssit/asunto1/asunto6.jpg"
+import asunto7 from "../img/referenssit/asunto1/asunto7.jpg"
+import asunto8 from "../img/referenssit/asunto1/asunto8.jpg"
+import asunto9 from "../img/referenssit/asunto1/asunto9.jpg"
+import asunto10 from "../img/referenssit/asunto1/asunto10.jpg"
+import asunto11 from "../img/referenssit/asunto1/asunto11.jpg"
+import asunto12 from "../img/referenssit/asunto1/asunto12.jpg"
+import asunto13 from "../img/referenssit/asunto2/asunto1.jpg"
+import asunto14 from "../img/referenssit/asunto2/asunto2.jpg"
+import asunto15 from "../img/referenssit/asunto2/asunto3.jpg"
+import asunto16 from "../img/referenssit/asunto2/asunto4.jpg"
+import asunto17 from "../img/referenssit/asunto2/asunto5.jpg"
+import asunto18 from "../img/referenssit/asunto2/asunto6.jpg"
+import asunto19 from "../img/referenssit/asunto2/asunto7.jpg"
+import asunto20 from "../img/referenssit/asunto2/asunto8.jpg"
+import asunto21 from "../img/referenssit/asunto2/asunto9.jpg"
+import asunto22 from "../img/referenssit/asunto2/asunto10.jpg"
+import asunto23 from "../img/referenssit/asunto2/asunto11.jpg"
+import asunto24 from "../img/referenssit/asunto2/asunto12.jpg"
 
 const photos = [
   {
-    src: 'referenssit/asunto1/asunto1.jpg',
+    src: asunto1,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto2.jpg',
+    src: asunto2,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto3.jpg',
+    src: asunto3,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto4.jpg',
+    src: asunto4,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto5.jpg',
+    src: asunto5,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto6.jpg',
+    src: asunto6,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto7.jpg',
+    src: asunto7,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto8.jpg',
+    src: asunto8,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto9.jpg',
+    src: asunto9,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto10.jpg',
+    src: asunto10,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto11.jpg',
+    src: asunto11,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto1/asunto12.jpg',
+    src: asunto12,
     width: 4,
     height: 2
   }
@@ -70,66 +93,191 @@ const photos = [
 
 const photos2 = [
   {
-    src: 'referenssit/asunto2/asunto1.jpg',
+    src: asunto13,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto2.jpg',
+    src: asunto14,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto3.jpg',
+    src: asunto15,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto4.jpg',
+    src: asunto16,
     width: 2,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto5.jpg',
+    src: asunto17,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto6.jpg',
+    src: asunto18,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto7.jpg',
+    src: asunto19,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto8.jpg',
+    src: asunto20,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto9.jpg',
+    src: asunto21,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto10.jpg',
+    src: asunto22,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto11.jpg',
+    src: asunto23,
     width: 4,
     height: 2
   },
   {
-    src: 'referenssit/asunto2/asunto12.jpg',
+    src: asunto24,
     width: 4,
     height: 2
   }
 ];
+// const photos = [
+//   {
+//     src: 'referenssit/asunto1/asunto1.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto2.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto3.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto4.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto5.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto6.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto7.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto8.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto9.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto10.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto11.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto1/asunto12.jpg',
+//     width: 4,
+//     height: 2
+//   }
+// ];
+
+// const photos2 = [
+//   {
+//     src: 'referenssit/asunto2/asunto1.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto2.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto3.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto4.jpg',
+//     width: 2,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto5.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto6.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto7.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto8.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto9.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto10.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto11.jpg',
+//     width: 4,
+//     height: 2
+//   },
+//   {
+//     src: 'referenssit/asunto2/asunto12.jpg',
+//     width: 4,
+//     height: 2
+//   }
+// ];
 
 export const ReferenssittPageTemplate = ({helmet}) => {
   return (
