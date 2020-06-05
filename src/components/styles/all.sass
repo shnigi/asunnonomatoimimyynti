@@ -66,6 +66,12 @@ $marginL: 30px
 .action-buttonwrapper
   margin-top: $marginL
 
+.frontpage-section-logo
+  float: right
+  margin: 40px
+  width: 100%
+  max-width: 300px
+
 // NAVBAR
 .navbar
   position: sticky;
@@ -244,12 +250,17 @@ $menu-label-color: $white-ter
 
 // responsiveness
 +tablet-only
+  .frontpage-section-logo
+      width: 300px
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
   .toimintatapa-stepper
     width: 400px
 
 +mobile
+  .frontpage-section-logo
+    width: 180px
+
   .youtube-video
     width: 100%
     min-width: 280px

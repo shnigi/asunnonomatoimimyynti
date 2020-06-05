@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import logo from '../img/logo.png'
 
 import Layout from '../components/Layout'
 // import BlogRoll from '../components/BlogRoll'
@@ -69,6 +69,7 @@ export const IndexPageTemplate = ({
         Korjaussuunnitelma sekä Pohjapiirustus. Ota sen jälkeen yhteys Asunnon omatoimimyyntiin ja sovi
         kuvaus/esittelypäivä. Saat sen jälkeen viikon sisällä tarvitsemasi materiaalit sähköpostiisi.
         </p>
+        <img src={logo} alt="logo" className="frontpage-section-logo" />
         <p>
         Lisämaksusta postitamme sinulle myyntiesitteitä haluamasi määrän ja laadimme myynti-ilmoitukset
         haluamiisi kanaviin.
