@@ -5,8 +5,6 @@ date: 2020-05-20T12:31:51.857Z
 description: tämä on testipostaus uli uli
 featuredpost: true
 featuredimage: /img/chemex.jpg
-tags:
-  - testipostaus
 ---
 ![](/img/flavor_wheel.jpg)
 
