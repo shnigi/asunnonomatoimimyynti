@@ -2,6 +2,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import { Link } from 'gatsby'
 import Layout from '../../components/Layout'
+import logo from '../../img/logo.png'
 
 function encode(data) {
   return Object.keys(data)
@@ -51,6 +52,7 @@ export default class Index extends React.Component {
               <p>Puh. 0400870484</p>
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
+              <img src={logo} alt="logo" className="margin-top-large"/>
             </section>
             <section id="yhteyslomake">
               <h2>Ota yhteyttä</h2>
