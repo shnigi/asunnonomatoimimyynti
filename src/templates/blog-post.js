@@ -11,6 +11,7 @@ export const BlogPostTemplate = ({
   description,
   title,
   helmet,
+  date,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -23,7 +24,9 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            <strong>Julkaistu: {date}</strong>
+            <br />
+            <br />
             <PostContent content={content} />
             <Link to="/blogi" className="button">Takaisin</Link>
           </div>
@@ -50,6 +53,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -79,7 +83,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD.MM.YYYY")
         title
         description
       }
