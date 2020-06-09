@@ -23,6 +23,7 @@ export default class Index extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -39,8 +40,6 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="wrapper">
-          {/* <div className="container">
-            <div className="content"> */}
             <div className="inner split">
             <section>
               <h2>Yhteystiedot</h2>
@@ -60,7 +59,7 @@ export default class Index extends React.Component {
                 name="contact"
                 method="post"
                 className="alt"
-                action="/contact/thanks/"
+                action="/otayhteytta/lahetetty/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -133,38 +132,20 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                {/* <div className="field">
-                  <label className="label" htmlFor={'apartmentType'}>
-                    Kyseessä on
-                  </label>
-                  <div className="control">
-                    <select
-                      className=""
-                      name={'apartmentType'}
-                      onChange={this.handleChange}
-                      id={'apartmentType'}
-                      required={false}
-                    >
-                      <option value="saab">Saab</option>
-                      <option value="fiat">Fiat</option>
-                      <option value="audi">Audi</option>
-                    </select>
-                  </div>
-                </div> */}
                 <div className="field">
                   <label className="label" htmlFor={'apartmentType'}>
                     Kyseessä on
                   </label>
                   <div className="control">
-                    <input type="radio" id="yksio" name="tyyppi" value="yksio" />
+                    <input type="radio" id="yksio" name="tyyppi" value="yksio" onChange={this.handleChange}/>
                     <label htmlFor="yksio">Yksiö</label><br />
-                    <input type="radio" id="kaksio" name="tyyppi" value="kaksio" />
+                    <input type="radio" id="kaksio" name="tyyppi" value="kaksio" onChange={this.handleChange}/>
                     <label htmlFor="kaksio">Kaksio</label><br />
-                    <input type="radio" id="kolmio" name="tyyppi" value="kolmio" />
+                    <input type="radio" id="kolmio" name="tyyppi" value="kolmio" onChange={this.handleChange}/>
                     <label htmlFor="kolmio">Kolmio</label><br />
-                    <input type="radio" id="suurempi" name="tyyppi" value="suurempi" />
+                    <input type="radio" id="suurempi" name="tyyppi" value="suurempi" onChange={this.handleChange}/>
                     <label htmlFor="suurempi">Suurempi tai jokin muu asuntotyyppi</label><br />
-                    <input type="radio" id="yhteydenotto" name="tyyppi" value="yhteydenotto" />
+                    <input type="radio" id="yhteydenotto" name="tyyppi" value="yhteydenotto" onChange={this.handleChange}/>
                     <label htmlFor="yhteydenotto">yhteydenotto</label>
                   </div>
                 </div>
