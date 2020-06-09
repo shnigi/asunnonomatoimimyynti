@@ -137,15 +137,15 @@ export default class Index extends React.Component {
                     Kyseessä on
                   </label>
                   <div className="control">
-                    <input type="radio" id="yksio" name="tyyppi" value="yksio" onChange={this.handleChange}/>
+                    <input type="radio" id="asuntotyyppi" name="tyyppi" value="yksio" onChange={this.handleChange}/>
                     <label htmlFor="yksio">Yksiö</label><br />
-                    <input type="radio" id="kaksio" name="tyyppi" value="kaksio" onChange={this.handleChange}/>
+                    <input type="radio" id="asuntotyyppikaksio" name="tyyppi" value="kaksio" onChange={this.handleChange}/>
                     <label htmlFor="kaksio">Kaksio</label><br />
-                    <input type="radio" id="kolmio" name="tyyppi" value="kolmio" onChange={this.handleChange}/>
+                    <input type="radio" id="asuntotyyppikolmio" name="tyyppi" value="kolmio" onChange={this.handleChange}/>
                     <label htmlFor="kolmio">Kolmio</label><br />
-                    <input type="radio" id="suurempi" name="tyyppi" value="suurempi tai jokin muu asuntotyyppi" onChange={this.handleChange}/>
+                    <input type="radio" id="asuntotyyppisuurempi" name="tyyppi" value="suurempi tai jokin muu asuntotyyppi" onChange={this.handleChange}/>
                     <label htmlFor="suurempi">Suurempi tai jokin muu asuntotyyppi</label><br />
-                    <input type="radio" id="yhteydenotto" name="tyyppi" value="yhteydenotto" onChange={this.handleChange}/>
+                    <input type="radio" id="asuntotyyppiyhteydenotto" name="tyyppi" value="yhteydenotto" onChange={this.handleChange}/>
                     <label htmlFor="yhteydenotto">yhteydenotto</label>
                   </div>
                 </div>
