@@ -77,7 +77,7 @@ export const PalvelukuvausTemplate = ({
               Esitteessä on kuvia asunnosta, pohjapiirustus sekä muun muassa kohdenumero netissä olevaan
               ilmoitukseen. Esite on kaksipuoleinen A4.</p>
               <ul className="actions">
-                <li><a href="/" className="button">Referenssi</a></li>
+                <li><a href={`referenssit/myyntiesite.pdf`} className="button" target="_blank" rel="noreferrer">Lataa esimerkki</a></li>
               </ul>
             </div>
           </div>
