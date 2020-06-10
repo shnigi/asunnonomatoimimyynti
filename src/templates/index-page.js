@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import logo from '../img/logo.png'
-
 import Layout from '../components/Layout'
-// import BlogRoll from '../components/BlogRoll'
+import ostoskarry from '../img/ostoskarry.jpg'
+
 
 export const IndexPageTemplate = ({
   image,
@@ -58,9 +58,20 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
+      <div
+        className="margin-top-0 jumbotron"
+        style={{backgroundImage: `url(${ostoskarry}`}}>
+        <div className="jumbotron-container">
+          <h3
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          >
+            Mikä asuntomyynnissä on tärkeää?
+          </h3>
+        </div>
+      </div>
+
       <section id="asuntomyynti" className="wrapper style2 alt">
         <div className="container">
-        <h2>Mikä asuntomyynnissä on tärkeää?</h2>
         <p>Asuntomyynnissä tärkeintä on löytää potentiaalinen ostaja. Niitä tarvitaan vain yksi. Kun sinulla on hyvin
         tehdyt myynti-ilmoitukset ja esitteet, niin ostajat löytävät kohteesi. Hyvä ja hyvin markkinoitu kohde myy
         melkein itse itsensä.</p>
