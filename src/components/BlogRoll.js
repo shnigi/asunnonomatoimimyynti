@@ -37,7 +37,7 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                     <span className="is-size-5 is-block">
-                      {post.frontmatter.date}
+                      Julkaistu: {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
@@ -83,7 +83,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "DD.MM.YYYY")
                 featuredpost
                 featuredimage {
                   childImageSharp {

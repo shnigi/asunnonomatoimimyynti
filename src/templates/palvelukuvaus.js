@@ -62,7 +62,7 @@ export const PalvelukuvausTemplate = ({
               </p>
               <ul className="actions">
                 <li>
-                  <AnchorLink to="/referenssit/#videoreferenssit" title="Referenssejä" className="button">Referenssejä</AnchorLink>
+                  <AnchorLink to="/referenssit" title="Referenssejä" className="button">Referenssejä</AnchorLink>
                 </li>
               </ul>
             </div>
@@ -86,14 +86,18 @@ export const PalvelukuvausTemplate = ({
               <img src={asunto} alt="" />
             </div>
             <div className="content">
-              <h3>Ostotarjous</h3>
-              <strong>Muut kaupantekoon tarvittavat asiakirjat</strong>
+              <h3>Muut kaupantekoon tarvittavat asiakirjat</h3>
               <p>Internetistä löytyvät kaikki asunnon myyntiin tarvittavat asiakirjat. Suosittelemme käyttämään ensisijaisesti
               Suomen suurinta välityspalvelua eli Etuovi.comia. Sieltä saat myös kaikki tarvitsemasi asiakirjat
               kaupantekoon, kuten esisopimuslomakkeen, kauppakirjan ja valtakirjan. Vastaavia asiakirjoja ja asunnon
               omatoimisen myynnin oppaita löydät runsaasti myös muilta sivustoilta.</p>
               <ul className="actions">
-                <li><a href="/" className="button">Asiakirjat</a></li>
+                <li>
+                  <a href="https://www.etuovi.com/myyntiopas/asunnon-myynnin-valmistelu" className="button" target="_blank" rel="noreferrer">Myynnin valmistelu</a>
+                </li>
+                <li>
+                  <a href="https://asunnot.oikotie.fi/vinkit-ja-oppaat/oppaat/asunnon-myyntiopas-myy-kotisi-hetkessa" className="button" target="_blank" rel="noreferrer">Myyntiopas</a>
+                </li>
               </ul>
             </div>
           </div>

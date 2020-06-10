@@ -60,7 +60,8 @@ export const IndexPageTemplate = ({
 
       <div
         className="margin-top-0 jumbotron"
-        style={{backgroundImage: `url(${ostoskarry}`}}>
+        style={{backgroundImage: `url(${ostoskarry}`}}
+        id="asuntomyynti">
         <div className="jumbotron-container">
           <h3
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
@@ -70,7 +71,7 @@ export const IndexPageTemplate = ({
         </div>
       </div>
 
-      <section id="asuntomyynti" className="wrapper style2 alt">
+      <section className="wrapper style2 alt">
         <div className="container">
         <p>Asuntomyynnissä tärkeintä on löytää potentiaalinen ostaja. Niitä tarvitaan vain yksi. Kun sinulla on hyvin
         tehdyt myynti-ilmoitukset ja esitteet, niin ostajat löytävät kohteesi. Hyvä ja hyvin markkinoitu kohde myy
