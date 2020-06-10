@@ -14,7 +14,7 @@ export const HinnastoPageTemplate = ({helmet}) => {
         <div className="pricing-table">
           <div className="pricing-plan">
             <div className="plan-header">Yksiöt</div>
-            <div className="plan-price"><span className="plan-price-amount selling-table-text-override"><span className="plan-price-currency selling-table-text-override">€</span>496</span></div>
+              <div class="plan-price "><span class="plan-price-amount selling-table-text-override"><span class="plan-price-currency selling-table-text-override">€</span>496</span><br />Sisältyy alv. 22 %.</div>
             <div className="plan-footer">
                 <Link to="/otayhteytta#yhteyslomake" className="button is-fullwidth">Tilaa</Link>
             </div>
@@ -22,19 +22,28 @@ export const HinnastoPageTemplate = ({helmet}) => {
 
           <div className="pricing-plan">
             <div className="plan-header">Kaksiot</div>
-            <div className="plan-price"><span className="plan-price-amount selling-table-text-override"><span className="plan-price-currency selling-table-text-override">€</span>620</span></div>
+              <div class="plan-price "><span class="plan-price-amount selling-table-text-override"><span class="plan-price-currency selling-table-text-override">€</span>620</span><br />Sisältyy alv. 22 %.</div>
             <div className="plan-footer">
                 <Link to="/otayhteytta#yhteyslomake" className="button is-fullwidth">Tilaa</Link>
             </div>
           </div>
 
           <div className="pricing-plan">
-            <div className="plan-header">Kolmiot ja suuremmat</div>
-            <div className="plan-price"><span className="plan-price-amount selling-table-text-override"><span className="plan-price-currency selling-table-text-override">€</span>744</span></div>
+            <div className="plan-header">Kolmiot</div>
+              <div class="plan-price "><span class="plan-price-amount selling-table-text-override"><span class="plan-price-currency selling-table-text-override">€</span>744</span><br />Sisältyy alv. 22 %.</div>
             <div className="plan-footer">
                 <Link to="/otayhteytta#yhteyslomake" className="button is-fullwidth">Tilaa</Link>
             </div>
           </div>
+
+          <div className="pricing-plan">
+            <div className="plan-header">Neliöt ja suuremmat</div>
+              <div class="plan-price "><span class="plan-price-amount selling-table-text-override"><span class="plan-price-currency selling-table-text-override">€</span>868</span><br />Sisältyy alv. 22 %.</div>
+            <div className="plan-footer">
+              <Link to="/otayhteytta#yhteyslomake" className="button is-fullwidth">Tilaa</Link>
+            </div>
+          </div>
+
         </div>
       </div>
 

@@ -51,8 +51,8 @@ export const IndexPageTemplate = ({
             <h3>Palvelun sisältö</h3>
             <ul className="checklist">
               <li>Laadukkaat kuvat</li>
-              <li>Esittelyvideon</li>
-              <li>Myyntiesitteen</li>
+              <li>Esittelyvideo</li>
+              <li>Myyntiesite</li>
             </ul>
           </section>
         </div>
