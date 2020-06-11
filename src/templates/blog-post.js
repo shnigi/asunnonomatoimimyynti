@@ -8,7 +8,6 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   title,
   helmet,
   date,
