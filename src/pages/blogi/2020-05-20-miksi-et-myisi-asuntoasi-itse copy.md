@@ -3,7 +3,6 @@ templateKey: blog-post
 title: Miksi et möisi asuntoasi itse?
 date: 2020-05-20T12:31:51.857Z
 description: Miksi et myisi asuntoasi itse?
-featuredpost: true
 featuredimage: /img/chemex.jpg
 ---
 ![](/img/flavor_wheel.jpg)
