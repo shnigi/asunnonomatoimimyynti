@@ -87,10 +87,12 @@ export const PalvelukuvausTemplate = ({
             </div>
             <div className="content">
               <h3>Muut kaupantekoon tarvittavat asiakirjat</h3>
-              <p>Internetistä löytyvät kaikki asunnon myyntiin tarvittavat asiakirjat. Suosittelemme käyttämään ensisijaisesti
-              Suomen suurinta välityspalvelua eli Etuovi.comia. Sieltä saat myös kaikki tarvitsemasi asiakirjat
-              kaupantekoon, kuten esisopimuslomakkeen, kauppakirjan ja valtakirjan. Vastaavia asiakirjoja ja asunnon
-              omatoimisen myynnin oppaita löydät runsaasti myös muilta sivustoilta.</p>
+              <p>Asunnon omatoimimyynniltä saat myös ostotarjouslomakkeen, jonka voit jakaa
+              vaikka esittelyn yhteydessä. Internetistä löytyvät kaikki muut asunnon myyntiin
+              tarvittavat asiakirjat. Suosittelemme käyttämään ensisijaisesti Suomen suurinta
+              välityspalvelua eli Etuovi.comia. Sieltä saat kaikki muut tarvitsemasi asiakirjat
+              kaupantekoon. Vastaavia asiakirjoja ja asunnon omatoimisen myynnin oppaita
+              löydät runsaasti myös muilta sivustoilta.</p>
               <ul className="actions">
                 <li>
                   <a href="https://www.etuovi.com/myyntiopas/asunnon-myynnin-valmistelu" className="button" target="_blank" rel="noreferrer">Myynnin valmistelu</a>
