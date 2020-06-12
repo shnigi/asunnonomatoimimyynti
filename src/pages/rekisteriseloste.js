@@ -8,8 +8,9 @@ export const RekisteriSelostePageTemplate = ({helmet}) => {
     <div>
       {helmet || ''}
     <section className="section">
-      <div className="container">
-
+      <div className="container content">
+        <div className="columns">
+            <div className="column is-10 is-offset-1">
           <h1>Rekisteriseloste</h1>
           <p>Henkilötietolain (523/1999) 10§:n mukainen rekisteriseloste.</p>
 
@@ -94,7 +95,9 @@ export const RekisteriSelostePageTemplate = ({helmet}) => {
             Sähköpostimarkkinoinnissa vastaanottaja voi milloin tahansa poistaa tietonsa rekisteristä käyttämällä
             jokaisessa viestissä olevaa ”Peruuta tilaus”-toimintoa, tai lähettämällä poistopyyntö sähköpostilla
             rekisterin ylläpitäjän yhteyshenkilölle.</p>
-      </div>
+            </div>
+          </div>
+        </div>
     </section>
     </div>
   )
