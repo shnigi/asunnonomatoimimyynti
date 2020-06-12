@@ -160,12 +160,12 @@ export const ReferenssittPageTemplate = ({helmet}) => {
     <section className="section" id="valokuvareferenssit">
       <div className="container">
         <h1>Valokuvat</h1>
-          <Gallery photos={photos} />
+          <Gallery photos={photos2} />
       </div>
     </section>
     <section id="asuntomyynti" className="wrapper style2 alt">
       <div className="container">
-          <Gallery photos={photos2} />
+          <Gallery photos={photos} />
       </div>
     </section>
       <section className="section" id="videoreferenssit">
