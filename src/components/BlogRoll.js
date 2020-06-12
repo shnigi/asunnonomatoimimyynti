@@ -7,7 +7,8 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    console.log('post.frontmatter.featuredimage ', posts );
+    
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -86,7 +87,7 @@ export default () => (
                 date(formatString: "DD.MM.YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

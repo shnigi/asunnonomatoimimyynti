@@ -15,7 +15,7 @@ export const RekisteriSelostePageTemplate = ({helmet}) => {
 
           <h2>1. Rekisterin pitäjä</h2>
           <ul class="gdpr-list">
-            <li>RA Communications Oy (jäljempänä RAC)</li>
+            <li>Asunnon omatoimimyynti RA/RA Communications Oy</li>
             <li>Pohjantähdentie 42 B</li>
             <li>00740 Helsinki</li>
             <li>0400 870484, info@rac.fi</li>
@@ -64,7 +64,6 @@ export const RekisteriSelostePageTemplate = ({helmet}) => {
             Rekisteriin tallennettavat tiedot kerätään pääasiassa rekisteröidyiltä itseltään RAC:n verkkosivujen kautta
             tai ostetaan kaupallisilta rekistereiden ylläitäjiltä. Henkilön tietoja voidaan myös lisätä rekisteriin
             puhelimitse, sähköpostitse tai muuta kautta tapahtuneen vuorovaikutuksen seurauksena.
-            Kotisivujen kirjautumissivusto on suojattu SSL-sertifikaatilla.
           </p>
           <p>
             Käyttäytymiseen perustuvaa tietoa kerätään RAC:n verkkosivujen, sähköpostien ja sosiaalisen median

@@ -6,8 +6,10 @@ export default () => (
     <section className="section">
       <div className="container">
         <div className="content">
-          <h1>Viesti lähetetty!</h1>
-          <p>Vastaamme viestiisi mahdollisimman pian.</p>
+          <h1>Kiitos yhteydenotostasi!</h1>
+          <p>Vastaamme sinulle mahdollisimman pian. Kun haluat tehdä asuntokaupat Asunnon omatoimimyynnin
+              avustamana, lähetämme sinulle toimeksiantosopimuksen sähköpostiisi.</p>
+              <p>Terveisin, Ralf Ahlskog - Asunnon Omatoimimyynti RA</p>
         </div>
       </div>
     </section>
