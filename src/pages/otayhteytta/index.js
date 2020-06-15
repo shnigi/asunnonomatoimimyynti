@@ -63,7 +63,7 @@ export default class Index extends React.Component {
               <p>Puh. 0400870484</p>
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
-              <img src={logo} alt="logo" className="margin-top-large"/>
+              <img src={logo} alt="Asunnon omatoimimyynti" className="margin-top-large"/>
             </section>
             <section id="yhteyslomake">
               <h2>Ota yhteyttä</h2>

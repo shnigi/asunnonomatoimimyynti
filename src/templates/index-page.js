@@ -83,7 +83,7 @@ export const IndexPageTemplate = ({
         Korjaussuunnitelma sekä Pohjapiirustus. Ota sen jälkeen yhteys Asunnon omatoimimyyntiin ja sovi
         kuvaus/esittelypäivä. Saat sen jälkeen viikon sisällä tarvitsemasi materiaalit sähköpostiisi.
         </p>
-        <img src={logo} alt="logo" className="frontpage-section-logo" />
+          <img src={logo} alt="Asunnon omatoimimyynti" className="frontpage-section-logo" />
         <p>
         Lisämaksusta postitamme sinulle myyntiesitteitä haluamasi määrän ja laadimme myynti-ilmoitukset
         haluamiisi kanaviin.
