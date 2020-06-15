@@ -7,8 +7,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    console.log('post.frontmatter.featuredimage ', posts );
-    
+
     return (
       <div className="columns is-multiline">
         {posts &&

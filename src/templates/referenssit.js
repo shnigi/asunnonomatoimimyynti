@@ -172,8 +172,8 @@ export const ReferenssittPageTemplate = ({helmet}) => {
         <div className="container">
           <h1>Videot</h1>
           <div className="video-container">
-            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </section>
@@ -181,16 +181,22 @@ export const ReferenssittPageTemplate = ({helmet}) => {
   )
 }
 
-const ReferenssitPage = () => {
+const ReferenssitPage = ({data}) => {
+  console.log('data', data);
+  const { frontmatter } = data.markdownRemark
   return (
     <Layout>
       <ReferenssittPageTemplate
         helmet={
           <Helmet>
-            <title>Kuvia ja videoita asuntoesittelystä - Asunnon omatoimimyynti RA</title>
+            <title>{frontmatter.title}</title>
             <meta
               name="description"
-              content="Kuvaamme ja videoimme asuntosi. Myös muut palvelut, kuten ilmakuvat ja 3D-kuvat ovat mahdollisia."
+              content={frontmatter.description}
+            />
+            <meta
+              name="keywords"
+              content={frontmatter.keywords}
             />
           </Helmet>
         }
@@ -200,3 +206,16 @@ const ReferenssitPage = () => {
 }
 
 export default ReferenssitPage
+
+
+export const ReferenssitPageQuery = graphql`
+  query ReferenssitPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        title
+        description
+        keywords
+      }
+    }
+  }
+`
