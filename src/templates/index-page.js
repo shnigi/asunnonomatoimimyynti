@@ -6,10 +6,11 @@ import { Helmet } from 'react-helmet'
 
 export const IndexPageTemplate = ({
   image,
-  title,
+  heading,
   subheading,
   helmet,
-  subImage
+  subImage,
+  secondheading
 }) => (
   <div>
       {helmet || ''}
@@ -25,7 +26,7 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
         >
-          {title}
+          {heading}
         </h1>
         <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
@@ -72,7 +73,7 @@ export const IndexPageTemplate = ({
           <h3
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           >
-            Mikä asuntomyynnissä on tärkeää?
+            {secondheading}
           </h3>
         </div>
       </div>
@@ -137,6 +138,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        secondheading={frontmatter.secondheading}
         helmet={
           <Helmet>
             <title>{frontmatter.title}</title>
@@ -180,6 +182,7 @@ export const pageQuery = graphql`
         subheading
         description
         keywords
+        secondheading
       }
     }
   }

@@ -13,7 +13,11 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 export const PalvelukuvausTemplate = ({
   image,
   helmet,
-  heading
+  heading,
+  valokuvatteksti,
+  asiakirjateksti,
+  videoteksti,
+  esiteteksti
 }) => (
   <div>
       {helmet || ''}
@@ -40,9 +44,7 @@ export const PalvelukuvausTemplate = ({
             </div>
             <div className="content">
               <h3>Valokuvat</h3>
-              <p>Otamme kohteesta laadukkaat kuvat sisältä ja ulkoa. Saat vähintään 12 kuvaa, joista tehdään sekä paino-
-              että nettiversiot. Isännöitsijältä tarvitsemme pohjapiirroksen, jonka käsittelemme tarvittaessa sellaiseen
-              muotoon, että se voidaan liittää esimerkiksi netissä kuvien joukkoon.
+              <p>{valokuvatteksti}
               </p>
               <ul className="actions action-buttonwrapper">
                 <li>
@@ -57,8 +59,7 @@ export const PalvelukuvausTemplate = ({
             </div>
             <div className="content">
               <h3>Video</h3>
-              <p>Kuvaamme asuntosi läpikotaisin ja teemme aineistosta 1-2 minuutin mittaisen koosteen. Videoon sisältyy
-                  myös ulkokuvaus.
+              <p>{videoteksti}
               </p>
               <ul className="actions">
                 <li>
@@ -73,9 +74,7 @@ export const PalvelukuvausTemplate = ({
             </div>
             <div className="content">
               <h3>Esite</h3>
-              <p>Teemme houkuttelevan myyntiesitteen, jossa on napakka esittelyteksti sekä perustiedot kohteesta.
-              Esitteessä on kuvia asunnosta, pohjapiirustus sekä muun muassa kohdenumero netissä olevaan
-              ilmoitukseen. Esite on kaksipuoleinen A4.</p>
+              <p>{esiteteksti}</p>
               <ul className="actions">
                 <li><a href={`referenssit/myyntiesite.pdf`} className="button" target="_blank" rel="noreferrer">Lataa esimerkki</a></li>
               </ul>
@@ -87,12 +86,7 @@ export const PalvelukuvausTemplate = ({
             </div>
             <div className="content">
               <h3>Muut kaupantekoon tarvittavat asiakirjat</h3>
-              <p>Asunnon omatoimimyynniltä saat myös ostotarjouslomakkeen, jonka voit jakaa
-              vaikka esittelyn yhteydessä. Internetistä löytyvät kaikki muut asunnon myyntiin
-              tarvittavat asiakirjat. Suosittelemme käyttämään ensisijaisesti Suomen suurinta
-              välityspalvelua eli Etuovi.comia. Sieltä saat kaikki muut tarvitsemasi asiakirjat
-              kaupantekoon. Vastaavia asiakirjoja ja asunnon omatoimisen myynnin oppaita
-              löydät runsaasti myös muilta sivustoilta.</p>
+              <p>{asiakirjateksti}</p>
               <ul className="actions">
                 <li>
                   <a href="https://www.etuovi.com/myyntiopas/asunnon-myynnin-valmistelu" className="button" target="_blank" rel="noreferrer">Myynnin valmistelu</a>
@@ -146,6 +140,10 @@ const Palvelukuvaus = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
+        valokuvatteksti={frontmatter.valokuvatteksti}
+        esiteteksti={frontmatter.esiteteksti}
+        videoteksti={frontmatter.videoteksti}
+        asiakirjateksti={frontmatter.asiakirjateksti}
         helmet={
           <Helmet>
             <title>{frontmatter.title}</title>
@@ -182,6 +180,10 @@ export const PalvelukuvausQuery = graphql`
         description
         keywords
         heading
+        valokuvatteksti
+        esiteteksti
+        videoteksti
+        asiakirjateksti
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

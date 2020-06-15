@@ -8,4 +8,5 @@ description: Asunnon omatoimimyynti RA on palvelu asuntonsa itse myyville. Tuota
 keywords: Asunnon omatoimimyynti,Myy asunto itse,Asunnon myyminen,Asunnon myynti,Asunnon ostaminen
 subheading: Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja?
 heading: Asunnon omatoimimyynti RA
+secondheading: Mikä asuntomyynnissä on tärkeää?
 ---
