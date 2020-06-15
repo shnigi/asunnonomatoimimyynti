@@ -2,14 +2,14 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import logo from '../img/logo.png'
 import Layout from '../components/Layout'
-import ostoskarry from '../img/ostoskarry.jpg'
 import { Helmet } from 'react-helmet'
 
 export const IndexPageTemplate = ({
   image,
   title,
   subheading,
-  helmet
+  helmet,
+  subImage
 }) => (
   <div>
       {helmet || ''}
@@ -62,7 +62,11 @@ export const IndexPageTemplate = ({
 
       <div
         className="margin-top-0 jumbotron"
-        style={{backgroundImage: `url(${ostoskarry}`}}
+        style={{
+          backgroundImage: `url(${
+            !!subImage.childImageSharp ? subImage.childImageSharp.fluid.src : subImage
+            })`,
+        }}
         id="asuntomyynti">
         <div className="jumbotron-container">
           <h3
@@ -127,6 +131,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
+        subImage={frontmatter.subimage}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -158,6 +163,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        subimage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid

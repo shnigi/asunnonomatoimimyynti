@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
 image: /img/home-jumbotron.jpg
+subimage: /img/ostoskarry.jpg
 title: Miten myydä asunto itse - Asunnon omatoimimyynti RA
 description: Asunnon omatoimimyynti RA on palvelu asuntonsa itse myyville. Tuotamme kuvat, videot, esitteet ja
              autamme myös digitaalisissa julkaisemisissa.
