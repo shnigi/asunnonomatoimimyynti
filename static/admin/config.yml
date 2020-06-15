@@ -49,10 +49,10 @@ collections:
           - {label: Keywords, name: keywords, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Image, name: image, widget: image}
-          - {label: Valokuvien teksti, name: valokuvatteksti, widget: string}
-          - {label: Videon teksti, name: videoteksti, widget: string}
-          - {label: Esitteen teksti, name: esiteteksti, widget: string}
-          - {label: Asiakirjojen teksti, name: asiakirjateksti, widget: string}
+          - {label: Valokuvien teksti, name: valokuvatteksti, widget: text}
+          - {label: Videon teksti, name: videoteksti, widget: text}
+          - {label: Esitteen teksti, name: esiteteksti, widget: text}
+          - {label: Asiakirjojen teksti, name: asiakirjateksti, widget: text}
       - file: "src/pages/hinnasto/index.md"
         label: "Hinnasto"
         name: "hinnasto"
