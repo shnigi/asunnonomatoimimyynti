@@ -3,14 +3,16 @@ import { Link, graphql } from 'gatsby'
 import logo from '../img/logo.png'
 import Layout from '../components/Layout'
 import ostoskarry from '../img/ostoskarry.jpg'
-
+import { Helmet } from 'react-helmet'
 
 export const IndexPageTemplate = ({
   image,
   title,
   subheading,
+  helmet
 }) => (
   <div>
+      {helmet || ''}
     <div
       className="margin-top-0 jumbotron"
       style={{
@@ -121,7 +123,6 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -131,6 +132,19 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        helmet={
+          <Helmet>
+            <title>{frontmatter.title}</title>
+            <meta
+              name="description"
+              content={frontmatter.description}
+            />
+            <meta
+              name="keywords"
+              content={frontmatter.keywords}
+            />
+          </Helmet>
+        }
       />
     </Layout>
   )
@@ -153,6 +167,7 @@ export const pageQuery = graphql`
         heading
         subheading
         description
+        keywords
       }
     }
   }

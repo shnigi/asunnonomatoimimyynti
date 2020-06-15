@@ -73,10 +73,14 @@ const HinnastoPage = ({ data }) => {
       <HinnastoPageTemplate
         helmet={
           <Helmet>
-            <title>{`${frontmatter.title}`}</title>
+            <title>${frontmatter.title}</title>
             <meta
               name="description"
-              content={`${frontmatter.description}`}
+              content={frontmatter.description}
+            />
+            <meta
+              name="keywords"
+              content={frontmatter.keywords}
             />
           </Helmet>
         }
@@ -93,6 +97,7 @@ export const HinnastoPageQuery = graphql`
       frontmatter {
         title
         description
+        keywords
       }
     }
   }

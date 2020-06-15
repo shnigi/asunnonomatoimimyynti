@@ -34,6 +34,22 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
+          - {label: Keywords, name: keywords, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
+      - file: "src/pages/palvelukuvaus/index.md"
+        label: "Palvelukuvaus"
+        name: "palvelukuvaus"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Keywords, name: keywords, widget: string}
+          - {label: Heading, name: heading, widget: string}
+      - file: "src/pages/hinnasto/index.md"
+        label: "Hinnasto"
+        name: "hinnasto"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Keywords, name: keywords, widget: string}

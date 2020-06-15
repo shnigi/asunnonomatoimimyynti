@@ -8,10 +8,15 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>Asunnon omatoimimyynti RA - Blogi</title>
+          <title>Miksi et möisi asuntoasi itse? - Asunnon omatoimimyynti RA</title>
           <meta
             name="description"
-            content="test description"
+            content="Kiinteistönvälittäjät pelottelevat omatoimimyynnin riskeistä. Me varoitamme kelvottomista
+kiinteistönvälittäjistä."
+          />
+          <meta
+            name="keywords"
+            content="Välittäjä vai ei, Miksi välittäjä asuntokauppoihin, Välittäjä asuntokauppoihin"
           />
         </Helmet>
         <div
@@ -38,3 +43,15 @@ export default class BlogIndexPage extends React.Component {
     )
   }
 }
+
+// export const BlogisivuPageQuery = graphql`
+//   query BlogIndexPage($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       frontmatter {
+//         title
+//         description
+//         keywords
+//       }
+//     }
+//   }
+// `

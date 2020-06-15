@@ -187,10 +187,10 @@ const ReferenssitPage = () => {
       <ReferenssittPageTemplate
         helmet={
           <Helmet>
-            <title>Asunnon omatoimimyynti RA - Referenssit</title>
+            <title>Kuvia ja videoita asuntoesittelystä - Asunnon omatoimimyynti RA</title>
             <meta
               name="description"
-              content="referenssit"
+              content="Kuvaamme ja videoimme asuntosi. Myös muut palvelut, kuten ilmakuvat ja 3D-kuvat ovat mahdollisia."
             />
           </Helmet>
         }

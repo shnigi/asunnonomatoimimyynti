@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout'
 import logo from '../../img/logo.png'
 
@@ -39,6 +40,17 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet>
+          <title>Yhteystiedot Asunnon omatoimimyynti - Asunnon omatoimimyynti RA</title>
+          <meta
+            name="description"
+            content="Täältä löydät Asunnon omatoimimyynnin yhteystiedot."
+          />
+          <meta
+            name="keywords"
+            content="Yhteys Asunnon omatoimimyynti, Palaute Asunnon omatoimimyynti, Asunnon omatoimimyynti, RA Communications Oy"
+          />
+        </Helmet>
         <section className="wrapper">
             <div className="inner split">
             <section>

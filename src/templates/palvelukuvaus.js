@@ -36,7 +36,7 @@ export const PalvelukuvausTemplate = ({
         <div className="inner">
           <div className="spotlight">
             <div className="image">
-              <img src={kamera} alt="" />
+              <img src={kamera} alt="Asunnon valokuvaus" />
             </div>
             <div className="content">
               <h3>Valokuvat</h3>
@@ -53,7 +53,7 @@ export const PalvelukuvausTemplate = ({
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={video} alt="" />
+              <img src={video} alt="Asunnon videointi" />
             </div>
             <div className="content">
               <h3>Video</h3>
@@ -69,7 +69,7 @@ export const PalvelukuvausTemplate = ({
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={esite} alt="" />
+              <img src={esite} alt="Myyntiesite asunnosta" />
             </div>
             <div className="content">
               <h3>Esite</h3>
@@ -83,7 +83,7 @@ export const PalvelukuvausTemplate = ({
           </div>
           <div className="spotlight">
             <div className="image">
-              <img src={asunto} alt="" />
+              <img src={asunto} alt="Asuntokaupan asiakirjat" />
             </div>
             <div className="content">
               <h3>Muut kaupantekoon tarvittavat asiakirjat</h3>
@@ -148,10 +148,14 @@ const Palvelukuvaus = ({ data }) => {
         description={frontmatter.description}
         helmet={
           <Helmet>
-            <title>{`${frontmatter.title}`}</title>
+            <title>{frontmatter.title}</title>
             <meta
               name="description"
-              content={`${frontmatter.description}`}
+              content={frontmatter.description}
+            />
+            <meta
+              name="keywords"
+              content={frontmatter.keywords}
             />
           </Helmet>
         }
@@ -176,6 +180,7 @@ export const PalvelukuvausQuery = graphql`
       frontmatter {
         title
         description
+        keywords
         heading
         image {
           childImageSharp {
