@@ -73,7 +73,7 @@ const HinnastoPage = ({ data }) => {
       <HinnastoPageTemplate
         helmet={
           <Helmet>
-            <title>${frontmatter.title}</title>
+            <title>{frontmatter.title}</title>
             <meta
               name="description"
               content={frontmatter.description}
