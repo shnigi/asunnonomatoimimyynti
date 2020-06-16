@@ -40,6 +40,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Second heading, name: secondheading, widget: string}
+          - {label: Main pitch, name: mainpitch, widget: markdown}
       - file: "src/pages/palvelukuvaus/index.md"
         label: "Palvelukuvaus"
         name: "palvelukuvaus"

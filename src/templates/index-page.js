@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import logo from '../img/logo.png'
 import Layout from '../components/Layout'
 import { Helmet } from 'react-helmet'
+import MarkdownContent from '../components/MarkdownContent'
 
 export const IndexPageTemplate = ({
   image,
@@ -10,7 +11,8 @@ export const IndexPageTemplate = ({
   subheading,
   helmet,
   subImage,
-  secondheading
+  secondheading,
+  mainpitch
 }) => (
   <div>
       {helmet || ''}
@@ -41,11 +43,7 @@ export const IndexPageTemplate = ({
         <div className="inner split">
           <section>
             <h2>Asunnon omatoimisella myynnillä säästät tuhansia euroja!</h2>
-            <p>Hei asunnon myyjä!</p>
-            <p>Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.</p>
-            <p>Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin.</p>
-            <p>Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi
-                internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.</p>
+            <p>{MarkdownContent(mainpitch)}</p>
             <ul className="actions action-buttonwrapper">
               <li><a href="#asuntomyynti" className="button">Lue lisää</a></li>
             </ul>
@@ -128,6 +126,8 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  console.log('data', data);
+  
   return (
     <Layout>
       <IndexPageTemplate
@@ -139,6 +139,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         secondheading={frontmatter.secondheading}
+        mainpitch={frontmatter.mainpitch}
         helmet={
           <Helmet>
             <title>{frontmatter.title}</title>
@@ -183,6 +184,7 @@ export const pageQuery = graphql`
         description
         keywords
         secondheading
+        mainpitch
       }
     }
   }
