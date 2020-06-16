@@ -22,7 +22,4 @@ mainpitch: >-
 
 
   Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.
-
-
-  jaahasta juu
 ---
