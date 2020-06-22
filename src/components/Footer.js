@@ -20,7 +20,7 @@ const Footer = class extends React.Component {
                 <ul className="footer-links">
                 <li><strong>Asunnon omatoimimyynti</strong></li>
                 <li>Ralf Ahlskog</li>
-                <li>ralf.ahlskog@rac.fi</li>
+                <li>info@asunnonomatoimimyynti.fi</li>
                 <li>Puh. 0400870484</li>
                 <li>Pohjantähdentie 42B</li>
                 <li>00740 Helsinki</li>
