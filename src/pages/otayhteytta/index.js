@@ -59,7 +59,7 @@ export default class Index extends React.Component {
               <p>Ralf Ahlskog</p>
               <p>Pohjantähdentie 42 B</p>
               <p>00740 Helsinki</p>
-              <p>ralf.ahlskog@rac.fi</p>
+              <p>info@asunnonomatoimimyynti.fi</p>
               <p>Puh. 0400870484</p>
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>

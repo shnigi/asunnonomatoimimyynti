@@ -172,8 +172,8 @@ export const ReferenssittPageTemplate = ({helmet}) => {
         <div className="container">
           <h1>Videot</h1>
           <div className="video-container">
-            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-            <iframe className="youtube-video" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/bQMmLoj3MN8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className="youtube-video" src="https://www.youtube.com/embed/WVvJEBczvMc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </section>
