@@ -38,7 +38,7 @@ export const PalvelukuvausTemplate = ({
 
       <section id="two" className="wrapper style2 alt">
         <div className="inner">
-          <div className="spotlight">
+          <div className="spotlight" id="valokuvaus">
             <div className="image">
               <img src={kamera} alt="Asunnon valokuvaus" />
             </div>
@@ -53,7 +53,7 @@ export const PalvelukuvausTemplate = ({
               </ul>
             </div>
           </div>
-          <div className="spotlight">
+          <div className="spotlight" id="videointi">
             <div className="image">
               <img src={video} alt="Asunnon videointi" />
             </div>
@@ -68,7 +68,7 @@ export const PalvelukuvausTemplate = ({
               </ul>
             </div>
           </div>
-          <div className="spotlight">
+          <div className="spotlight" id="myyntiesite">
             <div className="image">
               <img src={esite} alt="Myyntiesite asunnosta" />
             </div>
@@ -80,7 +80,7 @@ export const PalvelukuvausTemplate = ({
               </ul>
             </div>
           </div>
-          <div className="spotlight">
+          <div className="spotlight" id="asiakirjat">
             <div className="image">
               <img src={asunto} alt="Asuntokaupan asiakirjat" />
             </div>

@@ -168,8 +168,8 @@ export const ReferenssittPageTemplate = ({helmet}) => {
           <Gallery photos={photos} />
       </div>
     </section>
-      <section className="section" id="videoreferenssit">
-        <div className="container">
+      <section className="section">
+        <div className="container" id="videoreferenssit">
           <h1>Videot</h1>
           <div className="video-container">
             <iframe className="youtube-video" src="https://www.youtube.com/embed/bQMmLoj3MN8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -4,6 +4,7 @@ import logo from '../img/logo.png'
 import Layout from '../components/Layout'
 import { Helmet } from 'react-helmet'
 import MarkdownContent from '../components/MarkdownContent'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 export const IndexPageTemplate = ({
   image,
@@ -54,9 +55,9 @@ export const IndexPageTemplate = ({
           <section className="checklist-container">
             <h3>Palvelun sisältö</h3>
             <ul className="checklist">
-              <li>Laadukkaat kuvat</li>
-              <li>Esittelyvideo</li>
-              <li>Myyntiesite</li>
+              <li><AnchorLink to="/palvelukuvaus#valokuvaus" title="Laadukkaat kuvat">Laadukkaat kuvat</AnchorLink></li>
+              <li><AnchorLink to="/palvelukuvaus#videointi" title="Esittelyvideo">Esittelyvideo</AnchorLink></li>
+              <li><AnchorLink to="/palvelukuvaus#myyntiesite" title="Myyntiesite">Myyntiesite</AnchorLink></li>
             </ul>
           </section>
         </div>
