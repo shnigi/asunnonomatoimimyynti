@@ -36,9 +36,9 @@ class BlogRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span className="is-size-5 is-block">
+                    {/* <span className="is-size-5 is-block">
                       Julkaistu: {post.frontmatter.date}
-                    </span>
+                    </span> */}
                   </p>
                 </header>
                 <p>

@@ -58,7 +58,9 @@ export const HinnastoPageTemplate = ({helmet}) => {
             summa, joka esimerkiksi Oikotiellä on 149 € (Toukokuu 2020).</li>
           </ul>
         <h2>Muut kustannukset</h2>
-        <p>Kilometrikorvaus verohallinnon ohjeiden mukaisesti osoitteesta Pohjantähdentie 42 Helsinki.</p>
+        <p>Kilometrikorvaus verohallinnon ohjeiden mukaisesti osoitteesta Pohjantähdentie 42 Helsinki.
+            Kilometrikorvausta ei tule, jos kohde on lähellä kuvaajaa.
+          Kysy tarkemmin tarjouspyynnössä!</p>
       </div>
     </section>
     </div>

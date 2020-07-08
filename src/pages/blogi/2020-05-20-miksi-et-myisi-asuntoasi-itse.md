@@ -93,12 +93,12 @@ päätettäväksesi.
 
 # Muista nämä asiat, kun olet laittamassa asuntoasi myyntiin:
 
-1. Selvitä asuntosi markkinahinta
-2. hanki tarvittavat todistukset ja asiakirjat isännöitsijältä.
-3. kauppakirjan ja ostosopimusasiakirjan voit tulostaa näiltä sivustoilta tai vaikka asuntomyyntiportaaleista.
+1. Selvitä asuntosi markkinahinta.
+2. Hanki tarvittavat todistukset ja asiakirjat isännöitsijältä.
+3. Kauppakirjan ja ostosopimusasiakirjan voit tulostaa näiltä sivustoilta tai vaikka asuntomyyntiportaaleista.
 4. Kysy kaavoitustilanteesta isännöitsijältä tai maanmittauslaitoksesta.
 5. Siivoa ja järjestä asuntosi kuvauskuntoon.
-6. Sovi haastattelusta ja kuvausajankohdasta Asunnon omatoimimyynnin kanssa
+6. Sovi haastattelusta ja kuvausajankohdasta Asunnon omatoimimyynnin kanssa.
 7. Tarkista materiaalit ja huolehdi ilmoitusten laatimisesta omatoimisesti tai Asunnon omatoimimyynnin kanssa myyntiportaaleihin ja sosiaaliseen mediaan.
 8. Sovi näytöistä ja odota tarjouksia.
 9. Pyydä tarjoukset kirjallisina ja teet vastatarjoukset myös kirjallisina.
