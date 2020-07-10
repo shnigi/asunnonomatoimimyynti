@@ -53,7 +53,7 @@ export default class Index extends React.Component {
         </Helmet>
         <section className="wrapper">
             <div className="inner split">
-            <section>
+            <section className="yhteystiedot">
               <h2>Yhteystiedot</h2>
               <p><strong>Asunnon omatoimimyynti</strong></p>
               <p>Ralf Ahlskog</p>
@@ -63,6 +63,11 @@ export default class Index extends React.Component {
               <p>Puh. 0400870484</p>
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
+              <div className="margin-top-large">
+                <img src="img/ralf.jpg" alt="Ralf Ahlskog Asunnon omatoimimyynti" className="contact-person-image"></img>
+                <strong>Ralf Ahlskog</strong>
+                <p>Asunnon omatoimimyynti</p>
+              </div>
               <img src={logo} alt="Asunnon omatoimimyynti" className="margin-top-large"/>
             </section>
             <section id="yhteyslomake">

@@ -255,6 +255,32 @@ $menu-label-color: $white-ter
   height: 300px
   margin-bottom: $marginM
 
+.soittopyynto
+  align-items: baseline
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .callmargin
+    margin: 0px 20px
+
+#puhelinnumero
+  background-color: white
+
+.contact-person-image
+  border-radius: 50%
+  width: 200px
+  display: block
+  margin-bottom: 20px
+
+.contact-person
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.yhteystiedot
+  p
+    margin: 0
+
 // responsiveness
 +tablet-only
   .frontpage-section-logo
@@ -276,3 +302,8 @@ $menu-label-color: $white-ter
   .blog-list-item .featured-thumbnail
     margin-left: -24px
     width: calc(100% - -47px)
+  .soittopyynto
+    flex-direction: column
+    .callmargin
+      margin: 0px
+      margin-bottom: 15px

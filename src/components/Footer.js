@@ -10,8 +10,7 @@ const Footer = class extends React.Component {
             <div className="column is-half">
                 <h6>Asunnon omatoimimyynti</h6>
                 <p className="text-justify">
-                © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään. Kuvat: <a href="http://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a>.
-                Toteutus: <a href="https://nikiahlskog.com" target="_blank" rel="noreferrer">Niki Ahlskog</a>.
+                © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään.
                 </p>
               </div>
 

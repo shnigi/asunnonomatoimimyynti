@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import logo from '../img/logo.png'
 import Layout from '../components/Layout'
@@ -16,8 +16,39 @@ export const IndexPageTemplate = ({
   mainpitch,
   secondpitch,
   lastheading,
-  thirdpitch
-}) => (
+  thirdpitch,
+}) => {
+  const [state, setState] = useState();
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&')
+  }
+
+  const handleChange = (e) => {
+    setState({ [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => {
+        setFormSubmitted(true);
+      })
+      .catch((error) => alert(error))
+  }
+
+  return (
   <div>
       {helmet || ''}
     <div
@@ -84,23 +115,68 @@ export const IndexPageTemplate = ({
         <div className="container">
           <img src={logo} alt="Asunnon omatoimimyynti" className="frontpage-section-logo" />
           {MarkdownContent(secondpitch)}
+
+          {!formSubmitted &&
+          <form
+            name="soittopyynto"
+            method="post"
+            className="soittopyynto"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="soittopyynto" />
+            <div hidden>
+              <label>
+                Don’t fill this out:{' '}
+                <input name="bot-field" onChange={handleChange} />
+              </label>
+            </div>
+
+            <label className="label" htmlFor='puhelinnumero'>
+              Jätä soittopyyntö:
+            </label>
+            <div className="control callmargin">
+              <input
+                className="input"
+                type='text'
+                name='puhelinnumero'
+                onChange={handleChange}
+                id='puhelinnumero'
+                required
+              />
+            </div>
+            <button className="button" type="submit">Lähetä</button>
+          </form>
+        }
+          {formSubmitted && <strong>Soittopyyntö jätetty. Vastaamme sinulle mahdollisimman pian!</strong>}
+
         </div>
       </section>
 
       <section id="asuntomyynti" className="wrapper">
         <div className="container">
         <h2>{lastheading}</h2>
-          {MarkdownContent(thirdpitch)}
-          <ul className="actions action-buttonwrapper">
-            <li><Link to="/otayhteytta" className="button">Ota yhteyttä</Link></li>
-          </ul>
+          <div className="columns">
+            <div className="column is-two-thirds">
+              {MarkdownContent(thirdpitch)}
+              <ul className="actions action-buttonwrapper">
+                <li><Link to="/otayhteytta" className="button">Ota yhteyttä</Link></li>
+              </ul>
+            </div>
+            <div className="column is-one-quarter contact-person">
+              <img src="img/ralf.jpg" alt="Ralf Ahlskog Asunnon omatoimimyynti" className="contact-person-image"></img>
+              <strong>Ralf Ahlskog</strong>
+              <p>Asunnon omatoimimyynti</p>
+            </div>
+          </div>
         </div>
       </section>
   </div>
-)
+)}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
   return (
     <Layout>
       <IndexPageTemplate
