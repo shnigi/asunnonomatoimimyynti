@@ -11,6 +11,7 @@ const Footer = class extends React.Component {
                 <h6>Asunnon omatoimimyynti</h6>
                 <p className="text-justify">
                 © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään.
+                <Link to="/rekisteriseloste"> Rekisteriselosteemme löydät tästä.</Link>
                 </p>
               </div>
 
@@ -60,6 +61,7 @@ const Footer = class extends React.Component {
                     Ota yhteyttä
                   </Link>
                 </li>
+                <li><Link to="/rekisteriseloste"> Rekisteriseloste</Link></li>
                 </ul>
               </div>
             </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout'
 import logo from '../../img/logo.png'
@@ -64,11 +63,17 @@ export default class Index extends React.Component {
               <p>Y-tunnus 2262313-7</p>
               <p>Palvelu on saatavissa vain Uudellamaalla. Muualla sijaitsevista kohteista voidaan neuvotella erikseen.</p>
               <div className="margin-top-large">
-                <img src="img/ralf.jpg" alt="Ralf Ahlskog Asunnon omatoimimyynti" className="contact-person-image"></img>
-                <strong>Ralf Ahlskog</strong>
-                <p>Asunnon omatoimimyynti</p>
+                <div className="columns">
+                  <div className="column">
+                    <img src="img/ralf.jpg" alt="Ralf Ahlskog Asunnon omatoimimyynti" className="contact-person-image"></img>
+                    <strong>Ralf Ahlskog</strong>
+                    <p>Asunnon omatoimimyynti</p>
+                  </div>
+                  <div className="column">
+                    <img src={logo} alt="Asunnon omatoimimyynti" className="margin-top-large contact-logo"/>
+                  </div>
+                </div>
               </div>
-              <img src={logo} alt="Asunnon omatoimimyynti" className="margin-top-large"/>
             </section>
             <section id="yhteyslomake">
               <h2>Ota yhteyttä</h2>
@@ -198,7 +203,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <ul className="actions action-buttonwrapper">
-                    <li><p>Lähettämällä lomakkeen hyväksyt <Link to="/rekisteriseloste">tietosuojalausekkeen</Link></p>
+                    <li><p>Lähettämällä lomakkeen hyväksyt <a href="/rekisteriseloste" target="_blank">tietosuojalausekkeen</a></p>
                     </li>
                     <li><button className="button" type="submit">Lähetä</button></li>
                   </ul>
