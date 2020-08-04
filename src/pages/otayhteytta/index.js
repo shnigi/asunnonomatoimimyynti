@@ -70,7 +70,7 @@ export default class Index extends React.Component {
                     <p>Asunnon omatoimimyynti</p>
                   </div>
                   <div className="column">
-                    <img src={logo} alt="Asunnon omatoimimyynti" className="margin-top-large contact-logo"/>
+                    <img src="img/logo.jpg" alt="Asunnon omatoimimyynti" className="margin-top-large contact-logo"/>
                   </div>
                 </div>
               </div>

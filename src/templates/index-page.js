@@ -114,7 +114,7 @@ export const IndexPageTemplate = ({
 
       <section className="wrapper style2 alt">
         <div className="container">
-          <img src={logo} alt="Asunnon omatoimimyynti" className="frontpage-section-logo" />
+          <img src="img/logo.jpg" alt="Asunnon omatoimimyynti" className="frontpage-section-logo" />
           {MarkdownContent(secondpitch)}
 
           {!formSubmitted &&
