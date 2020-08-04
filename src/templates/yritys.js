@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import Team from '../components/Team'
 import { Helmet } from 'react-helmet'
 import MarkdownContent from '../components/MarkdownContent'
 
@@ -19,16 +20,7 @@ export const YritysPageTemplate = ({ helmet, yritystitle, yritys }) => {
 
             <section id="lisapalvelut" className="wrapper style2 alt">
                 <div className="container">
-                    <h2>Tiimi</h2>
-                    <p>Ralf Ahlskog on palvelun perustaja, koulutukseltaan toimittaja, MKT, videoeditoija ja Digikoordinaattori.
-                    Työtausta löytyy sanomalehdistä, isoista mainos- ja viestintätoimistoista sekä pitkästä
-                    markkinointiviestintäalan yrittäjyydestä.</p>
-                    <p>
-                    Niki Ahlskog on tietojenkäsittelytieteen maisteri, valokuvaaja, videoeditoija, ohjelmistokehittäjä ja graafinen suunnittelija.
-                    </p>
-                    <p>
-                    Neelia Ahlskog on koulutukseltaan markkinointiviestinnän tradenomi, hyvä kirjoittaja ja visuaalinen
-                    suunnittelija.</p>
+                    <Team />
                 </div>
             </section>
         </div>
