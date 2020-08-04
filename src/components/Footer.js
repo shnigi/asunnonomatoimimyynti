@@ -13,6 +13,14 @@ const Footer = class extends React.Component {
                 © Asunnon omatoimimyynti RA. Kaikki oikeudet pidätetään.
                 <Link to="/rekisteriseloste"> Rekisteriselosteemme löydät tästä.</Link>
                 </p>
+              <p>Löydät meidät myös <a href="https://www.facebook.com/asunnonomatoimimyynti.fi" target="_blank" rel="noreferrer">Facebookista!</a></p>
+              <p>
+                <a href="https://www.facebook.com/asunnonomatoimimyynti.fi" target="_blank" rel="noreferrer">
+                  <span class="icon facebook-icon">
+                  <i class="fa fa-facebook fa-2x"></i>
+                  </span>
+                </a>
+              </p>
               </div>
 
             <div className="column">
