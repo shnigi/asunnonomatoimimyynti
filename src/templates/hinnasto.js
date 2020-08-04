@@ -10,7 +10,7 @@ export const HinnastoPageTemplate = ({helmet}) => {
     <section className="section">
       <div className="container">
         <h1>Hinnat peruspaketille</h1>
-
+        <p>Peruspaketti sisältää kuvat, videon, esitteen, ostosopimuslomakkeen ja kauppakirjapohjan.</p>
         <div className="pricing-table">
           <div className="pricing-plan">
             <div className="plan-header">Yksiöt</div>
@@ -48,14 +48,16 @@ export const HinnastoPageTemplate = ({helmet}) => {
       </div>
 
     </section>
-    <section id="asuntomyynti" className="wrapper style2 alt">
+    <section id="lisapalvelut" className="wrapper style2 alt">
       <div className="container">
         <h2>Lisäpalvelut</h2>
           <ul className="checklist">
             <li>Ilmakuvat 100 €</li>
             <li>Myyntiesitteet tulostettuna ja postitettuna. Mustavalkoiset 1,5 € kpl. Neliväriesitteet 3 € kpl. + postimaksu.</li>
-            <li>Ilmoitusten syöttäminen nettiportaaliin. 62 €/portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
+            <li>Ilmoitusten syöttäminen nettiportaaliin. 62 € / portaali. Lisäksi veloitetaan palveluntarjoajan veloittama
             summa, joka esimerkiksi Oikotiellä on 149 € (Toukokuu 2020).</li>
+            <li>Digisisustus tyhjiin asuntoihin. Hinta 100 € / kuva</li>
+            <li>3D kuvat alkaen 150 €</li>
           </ul>
         <h2>Muut kustannukset</h2>
         <p>Kilometrikorvaus verohallinnon ohjeiden mukaisesti osoitteesta Pohjantähdentie 42 Helsinki.

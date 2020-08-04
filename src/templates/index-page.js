@@ -89,6 +89,7 @@ export const IndexPageTemplate = ({
               <li><AnchorLink to="/palvelukuvaus#valokuvaus" title="Laadukkaat kuvat">Laadukkaat kuvat</AnchorLink></li>
               <li><AnchorLink to="/palvelukuvaus#videointi" title="Esittelyvideo">Esittelyvideo</AnchorLink></li>
               <li><AnchorLink to="/palvelukuvaus#myyntiesite" title="Myyntiesite">Myyntiesite</AnchorLink></li>
+              <li><AnchorLink to="/hinnasto#lisapalvelut" title="Muut palvelut">Muut palvelut: katso tästä!</AnchorLink></li>
             </ul>
           </section>
         </div>
