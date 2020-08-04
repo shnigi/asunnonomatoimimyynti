@@ -18,10 +18,10 @@ mainpitch: >-
   Miksi maksaisit välittäjille asuntosi myymisestä tuhansia euroja, kun voit myydä sen pienellä vaivalla ja avustuksella itse.
 
 
-  Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin.
+  Asunnon omatoimimyyntipalvelu tarjoaa sinulle kaikki tarvittavat työkalut kämppäsi omatoimiseen myyntiin tai vuokraukseen.
 
 
-  Lisämaksusta otamme myös ilmakuvat ja syötämme tiedot haluamiisi internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.
+  Kuvat, video ja esite kuuluvat peruspakettiin. Lisämaksusta otamme myös ilmakuvat, 3D-kuvat, teemme digisisustuksen ja syötämme tiedot haluamiisi internetin myyntikanaviin, kuten Etuovi.com, Tori.fi ja Oikotie.
 secondpitch: >-
   Asuntomyynnissä tärkeintä on löytää potentiaalinen ostaja. Niitä tarvitaan
   vain yksi. Kun sinulla on hyvin tehdyt myynti-ilmoitukset ja esitteet, niin
