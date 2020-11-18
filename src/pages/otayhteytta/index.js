@@ -2,7 +2,6 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout'
-import logo from '../../img/logo.png'
 
 function encode(data) {
   return Object.keys(data)

@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
-import logo from '../img/logo.png'
 import Layout from '../components/Layout'
 import { Helmet } from 'react-helmet'
 import MarkdownContent from '../components/MarkdownContent'
