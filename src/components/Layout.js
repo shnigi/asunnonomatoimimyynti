@@ -15,6 +15,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content="noindex,nofollow" />
         <link
           rel="icon"
           type="image/png"
